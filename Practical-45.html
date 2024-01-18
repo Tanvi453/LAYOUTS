@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prectical-45</title>
+    <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/user/276/06b775262565857.5c8a1a70e66f8.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+        /* The side navigation menu */
+        .sidenav {
+            height: 100%;
+            /* 100% Full-height */
+            width: 0;
+            /* 0 width - change this with JavaScript */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            left: 0;
+            background-color: #111;
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 60px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div
+        style="background-color: rgb(242, 241, 241); height: 70px; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+
+        <img src="https://csite.nicepage.com/Images/logo-w.png" style="height: 50px; width: 150px;">
+
+        <div style="display: flex; gap: 10px;">
+
+            <a href="https://nicepage.com/css-templates/preview/we-build-trust-4429670?device=desktop#"><img
+                    src="https://csite.nicepage.com/Images/Site/responsive-desktop.png"
+                    style="height: 40px; width: 50px;"></a>
+
+            <a href="https://nicepage.com/css-templates/preview/we-build-trust-4429670?device=desktop#"><img
+                    src="https://csite.nicepage.com/Images/Site/responsive-laptop.png"
+                    style="height: 40px; width: 50px;"></a>
+
+            <a href="https://nicepage.com/css-templates/preview/we-build-trust-4429670?device=desktop#"><img
+                    src="https://csite.nicepage.com/Images/Site/responsive-tablet.png"
+                    style="height: 45px; width: 50px;"></a>
+
+            <a href="https://nicepage.com/css-templates/preview/we-build-trust-4429670?device=desktop#"><img
+                    src="https://csite.nicepage.com/Images/Site/responsive-phone-horizontal.png"
+                    style="height: 40px; width: 50px;"></a>
+
+            <a href="https://nicepage.com/css-templates/preview/we-build-trust-4429670?device=desktop#"><img
+                    src="https://csite.nicepage.com/Images/Site/responsive-phone.png"
+                    style="height: 40px; width: 50px;"></a>
+
+        </div>
+
+        <a href="https://nicepage.com/s/4429670/we-build-trust-css-template"><img
+                src="https://csite.nicepage.com/Images/Site/icon-close.png" style="height: 30px; width: 30px;"></a>
+
+    </div>
+
+    <div class="container"
+        style="background-color: white; height: 150px; width: 100%; display: flex; justify-content: space-between; align-items: center;">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://website4092501.nicepage.io/">Home</a>
+            <a href="https://website4092501.nicepage.io/About.html">About</a>
+            <a href="https://website4092501.nicepage.io/Team.html">Team</a>
+            <a href="https://website4092501.nicepage.io/Gallery.html">Gallery</a>
+            <a href="https://website4092501.nicepage.io/Contact.html">Contact</a>
+            <a href="https://website4092501.nicepage.io/Page-1.html">Page 1</a>
+            <a href="https://website4092501.nicepage.io/Page-2.html">Page 2</a>
+            <a href="https://website4092501.nicepage.io/Page-3.html">Page 3</a>
+            <a href="https://website4092501.nicepage.io/Page-4.html">Page 4</a>
+            <a href="https://website4092501.nicepage.io/Page-5.html">Page 5</a>
+        </div>
+
+        <div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.body.style.backgroundColor = "white";
+            }
+        </script>
+
+
+
+        <img src="https://assets.nicepagecdn.com/11a8ddce/4092501/images/Untitled-1.png"
+            style="height: 50px; width: 200px;">
+
+        <div style="display: flex; gap: 10px;">
+
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-facebook-2038471-1718509.png"
+                style="height: 40px; width: 40px; border-radius: 20px;">
+            <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png"
+                style="height: 40px; width: 40px; border-radius: 20px;">
+            <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-icone-bleu.png"
+                style="height: 40px; width: 40px; border-radius: 20px;">
+
+        </div>
+
+    </div>
+
+    <div
+        style="background-color: rgb(15, 97, 212); height: 400px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white;">
+
+        <h1>OUR LATEST <b>PROJECTS</b></h1>
+        <p style="text-align: center;"><b>As a result of our philosophy to be the most forward thinking company and our
+                focus on<br> understanding customer
+                needs, we have and will continue to expand across the UK with franchises<br> in the southwest of England
+                to the
+                north east of Scotland with over 50 territories nationwide.</b></p>
+    </div>
+
+    <div class="container mt-5" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+
+        <h1><b>COMPLETE BUILDING</b> SERVICES</h1>
+
+        <div style="display: flex; justify-content: center; text-align: center; gap: 200px;">
+
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 5%;">
+                <h1
+                    style="background-color: rgb(15, 97, 212); height: 150px; width: 150px; border-radius: 100px; color: white; display: flex; justify-content: center; align-items: center;">
+                    <b>35m+</b>
+                    <h3 style="margin-left: -40%;"><b>Square feet managed</b></h3>
+                </h1>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 5%;">
+                <h1
+                    style="background-color: rgb(15, 97, 212); height: 150px; width: 150px; border-radius: 100px; color: white; display: flex; justify-content: center; align-items: center;">
+                    <b>158</b>
+                    <h3 style="margin-left: -40%;"><b>Employees on our team</b></h3>
+                </h1>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 5%;">
+                <h1
+                    style="background-color: rgb(15, 97, 212); height: 150px; width: 150px; border-radius: 100px; color: white; display: flex; justify-content: center; align-items: center;">
+                    <b>250+</b>
+                    <h3 style="margin-left: -10%; color: black;"><b>Happy Clients</b></h3>
+                </h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class=" mt-5" style="background-color: rgb(242, 241, 241); height: 1150px; width: 100%;">
+
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
+
+            <h1 style="margin-top: 7%;">BUILD <b>GREAT</b> PRODUCTS</h1>
+
+            <div style="display: flex; gap: 30px; margin-top: 5%;">
+                <img src="https://assets.nicepagecdn.com/11a8ddce/4092501/images/pexels-photo-532568.jpeg"
+                    style="height: 350px; width: 350px;">
+
+                <img src="https://assets.nicepagecdn.com/d2cc3eaa/495975/images/uuyyu.jpg"
+                    style="height: 350px; width: 350px;">
+
+                <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/6b7cf53556a1559ba802b450/falling-bussiness-cards-mockup_125540-886.jpg"
+                    style="height: 350px; width: 350px;">
+
+            </div>
+
+            <div style="display: flex; gap: 30px;">
+                <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/cb90b2e84307548d92caf296/trrt.jpg"
+                    style="height: 350px; width: 350px;">
+
+                <img src="https://assets.nicepagecdn.com/11a8ddce/4092501/images/pexels-photo-325185.jpeg"
+                    style="height: 350px; width: 350px;">
+
+                <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/306c5a13ccc9552294a74267/black-white-business-card-mockup-design_47987-2181.jpg"
+                    style="height: 350px; width: 350px;">
+
+            </div>
+
+            <div style="display: flex; gap: 30px;">
+                <img src="https://assets.nicepagecdn.com/d2cc3eaa/495975/images/jkjkjk.jpg"
+                    style="height: 350px; width: 350px;">
+
+                <img src="https://assets.nicepagecdn.com/11a8ddce/4092501/images/pexels-burst-374820.jpg"
+                    style="height: 350px; width: 350px;">
+
+                <img src="https://assets.nicepagecdn.com/11a8ddce/4092501/images/pexels-linkedin-sales-navigator-2182981.jpg"
+                    style="height: 350px; width: 350px;">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        style="background-color: rgb(15, 105, 230); height: 400px; width: 100%; margin-top: -10px; display: flex; justify-content: center; align-items: center;">
+        <p style="margin-bottom: -5%; color: black; font-size: 120%;">Image From <a href="https://www.freepik.com/"
+                style="color: black; text-decoration: none;">Freepik</a></p>
+    </div>
+
+    <div class="container"
+        style="display: flex; flex-direction: column; align-items: center; gap: 30px; margin-top: 5%; margin-bottom: 5%;">
+
+        <h1><b>WE LOVE TO WORK</b> WITH OUR PARTNERS</h1>
+
+        <div style="display: flex; gap: 30px; margin-top: 5%;">
+
+            <div
+                style="background-color: rgb(242, 241, 241); height: 200px; width: 400px; display: flex; justify-content: center; align-items: center;">
+                <img src="https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/a32313390c475bec9fff6116/black-logo-1.png"
+                    style="height: 100px; width: 100px;">
+            </div>
+
+            <div
+                style="background-color: rgb(242, 241, 241); height: 200px; width: 400px; display: flex; justify-content: center; align-items: center;">
+                <img src="https://images01.nicepagecdn.com/thumbs/a1389d7bc73adea1e1c1fb7e/e8ce7cced71d5c7aa4d002e1/black-logo-2_150.png"
+                    style="height: 100px; width: 100px;">
+            </div>
+
+            <div
+                style="background-color: rgb(242, 241, 241); height: 200px; width: 400px; display: flex; justify-content: center; align-items: center;">
+                <img src="https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/8aba9edd10b65867bb8c1fd0/black-logo-3.png"
+                    style="height: 100px; width: 100px;">
+            </div>
+
+        </div>
+
+        <div style="display: flex; gap: 30px;">
+
+            <div
+                style="background-color: rgb(242, 241, 241); height: 200px; width: 400px; display: flex; justify-content: center; align-items: center;">
+                <img src="https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/da20b91fac9e573f9e813582/black-logo-4.png"
+                    style="height: 100px; width: 100px;">
+            </div>
+
+            <div
+                style="background-color: rgb(242, 241, 241); height: 200px; width: 400px; display: flex; justify-content: center; align-items: center;">
+                <img src="https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/f4c2ec35cca95ad2b1db886b/black-logo-5.png"
+                    style="height: 100px; width: 100px;">
+            </div>
+
+            <div
+                style="background-color: rgb(242, 241, 241); height: 200px; width: 400px; display: flex; justify-content: center; align-items: center;">
+                <img src="https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/62605c9f773e5f9cbdda4dbf/black-logo-6.png"
+                    style="height: 100px; width: 100px;">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="background-color:  rgb(242, 241, 241); height: 700px; width: 100%;">
+
+        <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+
+            <h1 style="margin-top: 5%;"><b>WE HELP</b> BUSINESS</h1>
+
+            <p style="margin-top: 2%; font-size: 120%; color: rgb(104, 103, 103); text-align: center;">Duis aute irure
+                dolor in
+                reprehenderit in voluptate velit esse<br> cillum dolore eu fugiat nulla pariatur.</p>
+
+
+            <div style="display: flex; gap: 30px; margin-top: 3%;">
+
+                <div style="background-color: white; height: 350px; width: 400px; padding: 30px;">
+
+                    <div style="display: flex; gap: 30px;">
+                        <img src="data:image/jpeg;base64,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"
+                            style="height: 100px; width: 100px; ">
+                        <h3 style="margin-top: 10%;"><b>Chart to us</b></h3>
+                    </div>
+
+                    <h5 style="margin-top: 10%; color: rgb(15, 105, 230);">Our friendly team is here to help.</h5>
+
+                    <a href="https://nicepage.best/"
+                        style="margin-top: 10%; color:black; font-size: 110%; text-decoration: none;"><b>hi@ourcompany.com</b></a>
+
+                </div>
+
+                <div style="background-color: white; height: 350px; width: 400px;  padding: 30px;">
+
+                    <div style="display: flex; gap: 30px;">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABcAF4DASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAQFBgIDAf/EADYQAAEEAQEEBQoGAwAAAAAAAAEAAgMEEQUSITFRFCJBYYEGExUjQlJxkbHhMjNTodHwYnLB/8QAGQEAAgMBAAAAAAAAAAAAAAAAAQQAAgMF/8QAIxEAAgIBBQEAAgMAAAAAAAAAAQIAEQMEEiEiMUETMlFxof/aAAwDAQACEQMRAD8A2aIikkIiqb+uwViWQDz0g44PVHirojOaUQFgPZbIsdY1e7OTmYsHJnV+6hue95y9znHvOU0ujb6Zicw+Cb1Fg2SyRnLHuae44U6vrV2AjMnnW8n7/wB+KjaNh4YRmH2a5FXUNYr3CGH1Up9lx4/AqxSjKVNMJqCDyIREVYYRFU6/eNasIYziSXdnk3tV0QuwUQMaFyBrOrumc6vWdiIbnOHtfZUqIuwiBBQiTMWNmF6R15pfyopH/wCrSVZ1qlejVbcvN23O/Li595XEmt3ZXbNfETRwaxuVT8hY9BLbQPZXSQyxHEsb2H/JpC4VrFrdlp2LbGzs7Q5oBXy/ShfXF2jkwn8bPcKgcg04g2g8iVfBaLRdXMjm1bLsuO5jz29xWdQEg5BwQrZMYyLRkVipsTfooOkXem0w5x9Yzqv/AJU5cdlKmjHAbFwsdrM5n1KU53MOwPD75WxWCe7bkc48XElN6NexMxzHgCcqRQiE96GN3Bzxn4KOpOnSCK/A88A8ZT73tNTAeyVqr33NXMLTwcI2jl/SpNu83SndEoxtDmgbb3DJJUXUtqnrLpQODxIO/tUq9p51F/TKDmyCQDaZkAgpbrS7v1r/AGac817PsEzdbhkhnja2yxu1G8DGV4aBJmzJVfvZMwgjv/uV71a/oaKS1ac3z5bsxxg5UfyfZm86Z34YmEkoGtj7fPn9w82L9lZI3Ykcz3SQuV1K7ble/wB5xK5TY8mMtvJ2cx3zET1ZW48Rv/lalYrTXbGo1iP1APmcLarm6tae4zhPWFg5Weblew8WuIW8WR1yuYNRkOOrJ1x48f3VtG1MRJmHAMrkRF0YtLm2PSWlR2m75oBsyd45/wDfmqhkj4zmN7mHm04UvS7vQrOX74n9V47l91Wj0Sfaj3wSdZhH0WC9G2Hz5LnkbpDe9zzl7i48ycq3lHozRxFwsWd7uYb/AH6rx0iowl1yzugh37/aKiXrT7ll8z+3c0cgoe7bR4JB1FyOiIt5SStLZt6lWA/UB+W9bVZjybrl9x85HVjbgfE/bK065mra3r+IzhHWFXa1RNyrmMZlj3t7+YViiWVipDCakWKMwHBFotZ0YyOdYqNy473sHb3hZ0gg4IwQuxjyLkFiJspU0YVxpk0d2udOtu3cYndoPJU6Ium8VApoy01a2zDaVU4gi3HHtFVaIoihRQkJs3C6Yx0j2sYC5zjgAdqMY6R4Yxpc4nAAG8rTaPpHRAJ7ABmI3D3Puq5coxizCqljJmm0xSqNi4vO955lS0RcdiWNmOAUKhERCGFBvaTWu5c5uxJ77ePjzU5FZWKmxAQD7MtY8n7cZPmi2ZvccH5FQ3adcYcGrL4NJ+i2qJldW49mRwrMUzTLrzgVpR8W4+qnV/J2w8gzvbE3kOsVp0UbVufOJBhWRKWnV6Q9UzL+17t5KloiVLFjZmoAHkIiIQz/2Q=="
+                            style="height: 100px; width: 100px; ">
+                        <h3 style="margin-top: 10%;"><b>Office</b></h3>
+                    </div>
+
+                    <h5 style="margin-top: 10%; color: rgb(15, 105, 230);">Come say hello at our office HQ.</h5>
+
+                    <a href="https://nicepage.me/"
+                        style="margin-top: 10%; color:black; font-size: 110%; text-decoration: none"><b>121 Rock Street,
+                            21 Avenue,<br> New York , NY 92103-9000</b></a>
+
+                </div>
+
+                <div style="background-color: white;  height: 350px; width: 400px; padding: 30px;">
+
+                    <div style="display: flex; gap: 30px;">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABiAGIDASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAQFBgIDAf/EADUQAAICAQIDAwoFBQEAAAAAAAABAgMEBRESITETIlEGFCNBQmFxgZHhUlOhsdEyM2PB8PH/xAAZAQACAwEAAAAAAAAAAAAAAAAABAECAwX/xAAkEQADAAIBBAICAwAAAAAAAAAAAQIDETEEEiFBIlETMmHB8P/aAAwDAQACEQMRAD8A2YAAAARM3UcfCXpZ7z9UI82yVLp6RDaXJLBmMjyiyJtqiEao+L7zIM9TzZvd5Nq+Etv2Gp6S3z4Mnmk2oMVHUcyD3WVb85N/uTMfygy62u1Ubo+9bP6oK6S1wCzSakEHB1bGzdoxlwWfgl1+XiThapcvTNU0+AACpIAAAACJqWYsLElb1m+UF4smU6ekQ3pbIesav5onRjtO5rm/wfczM5ysm5zk5Sb3bb5sTnKycpzblKT3bfrPbCw7M29VVfFt9Ejr48c4pFKp2yOC7WkYVkpY9OY5ZSXT2X/3xKe2qdNsq7Fwzi9mi0ZJvghy0cAA0KhNp7p7NGi0bWXZKOPly3k+UJv1+5mdHQzyY5yLTLTTl7RvwV2i5zzMXax7218pe/wZYnHqXLcscT2toAAqSDMeUmQ55kKE+7XHd/F/bY05itUnx6lkt/mNfTkN9JO739GOZ/EilzpsnRombfX/AHG+HfwXL+WUxb6FONnnGHY+V0OXx/79h3N+mzGOSqrsnVZGyDanF7plxqUYZ+nw1CC4bF3bF4lTOp1ZDqu3jwy2kXGuOVOLRTjwSxGt1KL34mRf7zrn+gnh7KMAG5QAAALHQ8h0ajWt+7Z3H8+n6muMHVPs7YTXWMkzeHO6ydUmM4X40AAJGwMVqceDUclP8xv6vc2plvKKh156tS7tsd/muX8DfSVq9GOZfEqTuqyVNkbIPaUXumcA6QsXedTHVcRZ2MvSxW1sF1PDTdQrVTw81cWPLo37BEwc23BvVlb5e1H1SRZZODTqdbytOaVnWdT5cxZypXbXHp/RqnvyuTh6BY8lKFkXjNcXab9EfZ6PRfXJ6fkq2cOsG+pWu/JprljOyyEOjg3sedNtlFisqm4TXRov2ZOe7/fyV3P0fLK51TcLIuMl1TOS8zJ+faIsu+CjdCXDGS9pb/8Av0KMvjvuXkilo6hHjsjFdZNI3pjtGod+pVLblB8b+X32NiJdZXySNsK8NgACRuCDq+F57huMV6SHeh/BOBaacvaIa2tGAaaezWzQNFrWkOyUsrGjvJ85wXr96M70OxjyLJO0J1Ll6YPSm+zHsVlM3CS9aPMF2tlS5WrY2VFR1HFU3044dT4o6HB9p2l0/wDHs/4/2U4MvwpcNov3v2T9S1Hzzgrrh2dFf9MCAC60bSJXSjkZMdqlzjF+19iW5wyQk7ZP0DBeNjO6xbWW89vCPqLYA5N27p0xyVpaAAKEgAAAK7P0fHzG5r0Vr9qK6/FFiC005e5ZDSfhmRyNFzaG9q+1j4w5/p1IM6rK3tOEov3rY3gG56ylyjJ4V6MFGE5vaEZSfuW5Mx9Izb2tqXBeM+79zYgK6yvSIWFe2VOBoVGM1O99tYum67q+RbACt3VvdM2UpcAAFCQAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z"
+                            style="height: 100px; width: 100px; ">
+                        <h3 style="margin-top: 10%;"><b>Phone</b></h3>
+                    </div>
+
+                    <h5 style="margin-top: 10%; color: rgb(15, 105, 230);">Mon-Fri from 8am to 5am</h5>
+
+                    <a href="https://nicepage.best/"
+                        style="margin-top: 10%; color:black; font-size: 110%; text-decoration: none"><b>+1(555)
+                            000-000</b></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        style="background-color: rgb(53, 52, 52); height: 200px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+        <p style="color: white;">Sample text. Click to select the Text Element.</p>
+
+        <p style="color: white;"><a href="https://nicepage.com/website-templates"><u>Website Templates</u></a> created
+            with<a href="https://website4092501.nicepage.io/Gallery.html?version=2995d91a-9435-4f0b-81ce-42298832a621">
+                <u>Website Builder Software</u></a></p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

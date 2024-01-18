@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BOOSTSTRAPMADE</title>
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png">
+
+    <style>
+        .abc {
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        .abc:hover {
+            transform: rotate(180deg);
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel=stylesheet href="./bootstrap9.css">
+
+</head>
+
+<body>
+
+    <div
+        style="background-color: rgb(21, 67, 116); height: 40px; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px; position: fixed;">
+
+        <div style="display: flex; gap: 10px;">
+
+            <img src="data:image/jpeg;base64,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"
+                style="height: 30px; width: 250px;">
+
+            <a href="https://bootstrapmade.com/demo/Gp/"><img
+                    src="https://csite.nicepage.com/Images/Site/responsive-desktop.png"
+                    style="height: 25px; width: 30px;"></a>
+
+            <a href="https://bootstrapmade.com/demo/Gp/"><img
+                    src="https://csite.nicepage.com/Images/Site/responsive-tablet.png"
+                    style="height: 30px; width: 30px;"></a>
+
+            <a href="https://bootstrapmade.com/demo/Gp/"><img
+                    src="https://csite.nicepage.com/Images/Site/responsive-phone.png"
+                    style="height: 30px; width: 30px;"></a>
+        </div>
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/"
+                        style="color: white;"><b>GP</b></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://bootstrapmade.com/impact-bootstrap-business-website-template/"
+                        style="color: white;"><b>IMPACT</b></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/"
+                        style="color: white;"><b>PHOTOFOLIO</b></a>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+        <div style="display: flex; gap: 20px;">
+
+            <a href="https://bootstrapmade.com/demo/templates/Gp/"><img
+                    src="https://www.freeiconspng.com/uploads/white-download-icon-png-32.png"
+                    style="height: 40px; width: 70px;"></a>
+
+            <a href="https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/#download"><input
+                    type="button" value="FREE DOWNLOAD"
+                    style="background-color: rgb(10, 182, 249); color: white; height: 40px;"></a>
+
+        </div>
+
+    </div>
+
+    <div
+        style="background-image: url(https://img.freepik.com/premium-photo/thinking-about-future-career-opportunities-concept-with-pensive-businesswoman-back-view-looking-through-big-window-sunny-city-empty-space-with-glossy-concrete-floor_670147-145.jpg?w=2000); background-size: cover; height: 100vh;  margin-top: -15%;">
+
+        <div class="d-flex justify-content-center align-items-center"
+            style="gap: 10%; background-color: rgb(0, 0, 0, 0.8); height: 70px; position: fixed; width: 100%;">
+
+            <div style="margin-left: -35%;">
+                <h1 style="color: white;">GP<b style="color: yellow;">.</b></h1>
+            </div>
+
+            <div class="d-flex" style="gap: 15%;">
+
+                <a href="https://bootstrapmade.com/demo/templates/Gp/#hero"
+                    style="text-decoration: none; color: rgba(255, 242, 0, 0.858);"><b>Home</b></a>
+
+                <a href="https://bootstrapmade.com/demo/templates/Gp/#about"
+                    style="text-decoration: none;  color: white;"><b>About</b></a>
+
+                <a href="https://bootstrapmade.com/demo/templates/Gp/#services"
+                    style="text-decoration: none; color: white;"><b>Services</b></a>
+
+                <a href="https://bootstrapmade.com/demo/templates/Gp/#portfolio"
+                    style="text-decoration: none;color: white;"><b>Portfolio</b></a>
+
+                <a href="https://bootstrapmade.com/demo/templates/Gp/#team"
+                    style="text-decoration: none;  color: white;"><b>Team</b></a>
+
+                <div class="dropdown">
+                    <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown"
+                        style="color: white; margin-top: -5%;">
+                        <b> Drop down </b>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://bootstrapmade.com/demo/templates/Gp/#">Drop down 1</a>
+                        <a class="dropdown-item" href="https://bootstrapmade.com/demo/templates/Gp/#"> Deep Drop
+                            down</a>
+                        <a class="dropdown-item" href="https://bootstrapmade.com/demo/templates/Gp/#">Drop down 2</a>
+                        <a class="dropdown-item" href="https://bootstrapmade.com/demo/templates/Gp/#">Drop down 3</a>
+                        <a class="dropdown-item" href="https://bootstrapmade.com/demo/templates/Gp/#">Drop down 4</a>
+
+                    </div>
+
+                </div>
+
+                <a href="https://bootstrapmade.com/demo/templates/Gp/#contact"
+                    style="text-decoration: none;  color: white;"><b>Contact</b></a>
+
+                <div>
+                    <button type="button" class="btn btn-outline-warning text-white" style="width: 150px;"><b>Get
+                            Started</b></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div
+            style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 15%; color: black;">
+
+            <div style="margin-top: 10%;">
+                <div>
+                    <h1 style="font-size: 400%;"><b>Powerful Digital</b></h1>
+                </div>
+
+                <div>
+                    <h1 style="font-size: 400%;"><b>Solutions With Gp<b style="color: yellow;">.</b></b></h1>
+                </div>
+
+                <div>
+                    <h4 style="font-size: 200%;"><b>We are team of talented digital marketers</b></h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="display: flex; gap: 20px; justify-content: center; margin-top: 5%;">
+
+            <div class="hover"
+                style="background-color: transparent; border: 1px black solid; height: 150px; width: 250px; text-align: center;">
+
+                <div style="margin-top: 10%;">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAlACYDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAQBAgMF/8QALxAAAQMCAwQJBQEAAAAAAAAAAQACAwQRBRIhExQVUSIxQVJhcZGS0TNEcrHh8P/EABgBAQEBAQEAAAAAAAAAAAAAAAADBAIB/8QAHhEAAgICAwEBAAAAAAAAAAAAAAECEhExEyEiQVH/2gAMAwEAAhEDEQA/AI6Wkkq3lsVuiLm5VXBqrnH7j8LbBvuPwUsEM1Rn2ZJyC5uVBylZ4eEiiSwuing9Tzj9x+Fh2E1LGFxyGwvoVPBDNUZ9mScgublWYQ4neLknodq8k5xTedBKLejzEQItBMuwhxFc0A6OBB8V3kxNtPK9kFMxlnEOPeU2EuG/s17D+l3mwmokmkeCyznEjXxWadOT3+FY2r5MDFmx/QpmR3N3a9a77wyXDaiSGIQnqNu3/XU3BqnnH6/xd3Uz6TCp2yltyb6HyXEuLqu8o6V/p46JmHNFsIHEGx0W20f3neqIgGd/ed6rBc49bifMoiABERAf/9k="
+                        style="height: 40px; width: 40px;">
+                </div>
+                <div>
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/"
+                        style="text-decoration: none; color: black; font-size: 150%;"><b>Lorem Ipsum</b></a>
+                </div>
+
+            </div>
+
+            <div class="hover"
+                style="background-color: transparent; border: 1px black solid; height: 150px; width: 250px; text-align: center;">
+
+                <div style="margin-top: 10%;">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAmACYDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAMEBQIB/8QAKxAAAQQCAAMFCQAAAAAAAAAAAQACBBEDEgUhMRNRUpHRFBUiMkFEcXKS/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAIDBAH/xAAeEQADAQEAAQUAAAAAAAAAAAAAARECEiEDMVFx8P/aAAwDAQACEQMRAD8AzgCegte6P8J8lo8GJa7O4dQywuPe8rvZ/Kk966aS9h+VK2UtXeE+SauA5tPktSTNmxtN3YjuLFBSQZmaU3O3LrQZyoJX6mlnqePs7yrKYqJSK5M0+EfcfoqjIz3xn5wW6MNEfVW+Di3Z22ASyhakZAlsjvwh+HR5s8z6LM987fn4KrNyibIxuSZEa9oc3szyItQwABImgCgAQAPyVJ7NOOXHk3wbYxQ6+i6jRckcyMuZzPjaflKjUsy/qPHbDDRLHei3mchs96IiACWiIAWiIgD/2Q=="
+                        style="height: 40px; width: 40px;">
+                </div>
+                <div>
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/"
+                        style="text-decoration: none; color: black; font-size: 150%;"><b>Dolor Sitema</b></a>
+                </div>
+
+            </div>
+
+            <div class="hover"
+                style="background-color: transparent; border: 1px black solid; height: 150px; width: 250px; text-align: center;">
+
+                <div style="margin-top: 10%;">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAnACIDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAQCAwUGAf/EAC0QAAEEAQEHAgUFAAAAAAAAAAEAAgMEETEFBhITFCGRIlEjM2Jx0hU0krHR/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAEDAgT/xAAeEQADAAICAwEAAAAAAAAAAAAAARECIRJBA1Fx0f/aAAwDAQACEQMRAD8A50zYJBB1VsscsEUcskTmslGWEuHcLVrGrW2L1clOKd3Mx6gP7wVK9tmi2pWPRwWMj5RI+F200UH5MrEinBTbMQ1prkUksUZ4Ihl5yOyjz/pHlblPbVA07RNOCuQ35QI+L200VF/pbW75txUoq7+YG+gDOvvgIXkysaDgppmTz/pHlCSQrkzrqMja+74dLA2ccw5Y7Q90o7alUPLDsWHPtgfirqzLNvdoCDikl5udfYrwN231XVGsBMGcAPbBHlciWNd9vuF9xQXO1qwOP0KHwPxV9+xHa3YMsVdldplA4G6a/YK51jeHHauzw3/UvbrzVt1nR2WcEnOyR9ylqr77obj/AA5tCELsIGjFYs1mlkE0kbNcB5wpjad4H91N/MoQs8cX0Os8ftO8D2tzYPceopW1dtTt4JrEkjNcOcSEIRxxXQViyEIWhH//2Q=="
+                        style="height: 40px; width: 40px;">
+                </div>
+                <div>
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/"
+                        style="text-decoration: none; color: black; font-size: 150%;"><b>Sedare <br>Perspiciatis</b></a>
+                </div>
+
+            </div>
+
+            <div class="hover"
+                style="background-color: transparent; border: 1px black solid; height: 150px; width: 250px; text-align: center;">
+
+                <div style="margin-top: 10%;">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAlACoDASIAAhEBAxEB/8QAGgAAAwEBAQEAAAAAAAAAAAAAAAQFAQMGAv/EADIQAAEDAwIBBw0BAAAAAAAAAAEAAgMEBRESITETFGFikaHRBhUiIzI1QVFTcYGDorH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgMEAf/EAB0RAAMBAAEFAAAAAAAAAAAAAAABAhESAxMhUaH/2gAMAwEAAhEDEQA/AI8UT5pGxxt1PdwCa8z130P6b4rLQ5ouEDi4acnfPQVTqKSqkne+O4NYxzshvKHYKF9RzWFJlNaIi3VzWgc1Jx12+KyWkq4InSSUxDG7k6gcd6YNvrc+8wP2uXZ0b6a1VTKiqbM5w9E68/jdL3X7X07wRFNR1T2rOcdU9q4YRhaSQjDIYpGOOS0OBLfmvT8/tNWRIaSXJ2wNu4FeUTtsk01kbSdnOH+pLhPyMnhZvVHFA2CSnicxrwdWcnHDCYhsbH20PLvXuGsH4DoTPlBIx1AA17SdY2BUVlxqmU3INmIjxjGBw+6hHO4WMpXGaeiqEIWoiTV9wnEzD0oQgCg72igcEIQALEIQB//Z"
+                        style="height: 40px; width: 40px;">
+                </div>
+                <div>
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/"
+                        style="text-decoration: none; color: black; font-size: 150%;"><b>Magni Dolores</b></a>
+                </div>
+
+            </div>
+
+            <div class="hover"
+                style="background-color: transparent; border: 1px black solid; height: 150px; width: 250px; text-align: center;">
+
+                <div style="margin-top: 10%;">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAnACgDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYBAgQFA//EAC0QAAEDAwEGBQQDAAAAAAAAAAEAAgMEERIFFCExUWFxFTNSgbETFlXwkdHS/8QAGAEAAwEBAAAAAAAAAAAAAAAAAQIDBAD/xAAeEQACAgMAAwEAAAAAAAAAAAAAAQIRAyExEiKR4f/aAAwDAQACEQMRAD8AUuyOylrS5waN1zZMdSKTQI42to9oncLmWQbr9Ekp+NJdGUb2LfBC7f3PWXsIae3LE/2tVMKTXmStdR7PO0X+rGN1+qV5JR3JaCop8Ytd0KXNxcQd5BshVELReay/qCcNVqaymkGNI2qpHNGTS25B/eiTmHF7XHfY3TbUyV1QWVmkTtkjLQHREjj7rNmXsrK4+M5njFB+GhyvwuP8rr6VU1lTIcqNtLSNacWhtiT+9Fk8Q16+Owsy54H5vZe9NJXUxfWavUNjjDSGxAjj7KU0q4vtjxe/wU5fNfb1FCh5ye53AE3shbjOR2V4ppYHZQyPjdza4hCFxxr8Y1C2O1Sfysks0szsppHyO5vcShCCilxBbbKfKEIRAf/Z"
+                        style="height: 40px; width: 40px;">
+                </div>
+                <div>
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/"
+                        style="text-decoration: none; color: black; font-size: 150%;"><b>Nemos <br>Enimade</b></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container" style="margin-top: 10%;">
+
+        <div style="display: flex; gap: 20px; width: 1200px;">
+
+            <div class="abc">
+                <h3><b>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</b></h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+
+                <div style="display: flex; gap: 10px;">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACIDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMCAQb/xAAfEAACAQQDAQEAAAAAAAAAAAAAARECAxJRITFhIkH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAIRMRL/2gAMAwEAAhEDEQA/APZgdGc6XH0uevSq0CLv8tpTT0tt+FaW3Sm1D0ZMh5KJdBmQHsrVoi7ClpOKHzGn4WAuI9oU5St2mnlceVX49FQBAOUu7kA6A8kX/9k="
+                        style="height: 40px; width: 40px; margin-left: -2%;">
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACIDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMCAQb/xAAfEAACAQQDAQEAAAAAAAAAAAAAARECAxJRITFhIkH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAIRMRL/2gAMAwEAAhEDEQA/APZgdGc6XH0uevSq0CLv8tpTT0tt+FaW3Sm1D0ZMh5KJdBmQHsrVoi7ClpOKHzGn4WAuI9oU5St2mnlceVX49FQBAOUu7kA6A8kX/9k="
+                        style="height: 40px; width: 40px; margin-left: -2%;">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgACIDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMCAQb/xAAfEAACAQQDAQEAAAAAAAAAAAAAARECAxJRITFhIkH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAZEQEBAAMBAAAAAAAAAAAAAAABAAIRMRL/2gAMAwEAAhEDEQA/APZgdGc6XH0uevSq0CLv8tpTT0tt+FaW3Sm1D0ZMh5KJdBmQHsrVoi7ClpOKHzGn4WAuI9oU5St2mnlceVX49FQBAOUu7kA6A8kX/9k="
+                        style="height: 40px; width: 40px; margin-left: -2%;">
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+                </div>
+
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident</p>
+            </div>
+
+            <div class="abc">
+                <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/about.jpg"
+                    style="height: 500px; width: 600px;">
+            </div>
+
+        </div>
+
+        <div id="demo" class="carousel slide" data-ride="carousel" style="margin-top: 10%;">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="" data-slide-to="0" class="active"></li>
+                <li data-target="" data-slide-to="1"></li>
+                <li data-target="" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+
+                    <div style="display: flex; gap: 100px;">
+                        <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-1.png"
+                            style="height: 100px; width: 100px;">
+                        <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-2.png"
+                            style="height: 100px; width: 100px;">
+                        <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-3.png"
+                            style="height: 100px; width: 100px;">
+                        <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-4.png"
+                            style="height: 100px; width: 100px;">
+                        <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-5.png"
+                            style="height: 100px; width: 100px;">
+                        <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-6.png"
+                            style="height: 100px; width: 100px;">
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="carousel-item active">
+
+                        <div style="display: flex; gap: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-2.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-3.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-4.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-5.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-6.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-7.png"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="carousel-item active">
+
+                        <div style="display: flex; gap: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-3.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-4.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-5.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-6.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-7.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-8.png"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="carousel-item active">
+
+                        <div style="display: flex; gap: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-4.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-5.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-6.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-7.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-8.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-1.png"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="carousel-item active">
+
+                        <div style="display: flex; gap: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-5.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-6.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-7.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-8.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-1.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-2.png"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="carousel-item active">
+
+                        <div style="display: flex; gap: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-6.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-7.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-8.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-1.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-2.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-3.png"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="carousel-item active">
+
+                        <div style="display: flex; gap: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-7.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-8.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-1.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-2.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-3.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-4.png"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="carousel-item active">
+
+                        <div style="display: flex; gap: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-8.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-1.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-2.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-3.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-4.png"
+                                style="height: 100px; width: 100px;">
+                            <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/clients/client-5.png"
+                                style="height: 100px; width: 100px;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+        <div style="display: flex; gap: 50px; margin-top: 10%;">
+
+            <div>
+                <img src="https://www.careercontessa.com/uploadedImages/Advice/advice_2324-480w.jpg"
+                    style="height: 400px; width: 550px;">
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+
+                <div style="display: flex; gap: 20px;">
+                    <img src="https://icones.pro/wp-content/uploads/2021/06/symbole-de-nouvelles-jaune.png"
+                        style="height: 50px; width: 50px;">
+                    <div>
+                        <h3>Est labore ad</h3>
+                        <p style="width: 600px; color: grey;">Consequuntur sunt aut quasi enim aliquam quae harum
+                            pariatur laboris nisi ut aliquip</p>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANQAAADuCAMAAAB24dnhAAAAulBMVEX/8Xb/////wQD/vwD/9Hr/0Wb/vQD/8Gz/8oH/yyX//On/8nj/8XP/8Gr/8G//wgD/6mj//vX//vn/4ln/1T7/3E3/78b/+tD/97j/++3/31P//OL//Ob/9JT/+tX/847/+MH/z1D/3Yj/0jb/9qr/5KL/yjj/6LD/67r/9dn/xxr/4Zj/8Mv/52L/zy//+cr/9q3/9aH/2XX/0l3/13P/84f/9Jv/yC//5J7/3ID/3Yz/0FT/zUX/6axZnXD+AAAMd0lEQVR4nO2da1fbOBBArSgoEDsOCYE2hZZHCyHh0fIqhYX//7dWdpyHbUmekUY27cl86J6zJyS6lq5Gkm0pYP9gBE0XwEdsoP6W2ED9LVEH1HB8MPnzcn//cn55Pa7h9/xDTa/e+kIGl5H8d/bw3vX9m36huq99SdNajwTt+X3o9Wd9Qk0fRB5oCSb4i8926A9qvKVByirsxV9t+YIavpqQ5ljnnn7bF9SkL8xISYjZgZ9f9wJ1fVFVTQu3Tr30hB6gxrr+QYn1MqAvAT3UKwcjpVgterWooUAy5YNeLVqoKVCmQmWJ0yPSYlBCmTOTGeueMmvRQQ3PbJFSLMqsRQZlIVM+CNUigoJmJmNlkWUtEihMZjJj0WQtAqjqYR4Ci0QtdyhnmfIhnt3VcoWaPtNV0zwIspYblH1mMmM5quUEhRzmIbD4e0NQl7Qy5UM8XzcANX3z0fJWwcWDddayhMLJlC6OZf9gsM4sB4R2UFcIJC76t/t7N7sybvb2b/uIPxUtO7VsoBAySaLRTdBuh1m028HNCMFlpxYeCjFn4mK2J4GCXEiwvRniKyzUwkKNHxGXWSIViBZcEgv6LRZqIaGu4KZzvh8qkVKscB/+TaKPVAsFhZGJj4K2DimJdjTC1DlKLQQUIjNxsbNrREqxdnc8qQWGGqBkulHL5KQWfPEdCvUHIVNrH4I0x9pvwS8VeEAIgzrAXNFRVNny1togSi1g1oJAHRHLVMBCqfUfRK1qqME9uUz5CNs3KLWq51qVUDiZ9JnJiIXKWtUDwgoojExVmckUUi0EVtUKoRFqeopo7bexNVKKtXuLUcu4jGGAGvqWKR9YtQxZSw91jpCp/8UVaY6FyFqmFUIdVF0y5QM5INSppYbq1ihTAQuVtTSL7yqowUutMuWDImspoCYt+JfSyFTACr9g1JoAoManTciUD5xa/5Uqqwh1De7ziGUqYGHU6k/NUOfgryKXKR9yrgWeZnMxMUG9gr/Hh0xFLPiAUPzRQ50BmbzJlA+EWuJVB/UHxuRVpgIWWC1xpYY6gDF5likf8GUMcamCGsMe/PIvUwELOtcSUwXUKeBPuahFpnwA1eKzMtR5dS3XKFMBC6SWeCxCDaqZapUpHzC1lg1wAbVVdSV4q2aZiljVavG3PNRRxXWoKTOZArCMIQ5yUI/mjzclUwFLqmW+9KfrUGPjh3lLc5+p7pBqmSclmVVzqCsTFN/BrCP7jXa0Y6LiL2tQM8Mnxe3HqKZ5hO3vxla1gpoaPse/f5hqmkd7ZCjtvKtIoa70FcV3PhiTmYqfLaHetFC8HzXNUI5Y7xW/WEAN9BUlrn/0PhhWHH5jfT3VIIPSK5XMUg6Pe01zrEXU+SxLfK0v8XUGdan7CH9OO5NPYdw0SxZR7/fAPFhIp1WBKUuJxd3Iz/GHwOo8HS7G3zoo/ppB6bD5w3KGMrhrXq04+rksj3aJiD9mULoRulhfTzt66jSKFHV+rZWGDXUVsWWGWgwPF9GkWlKmwpuZr5pCV0CtL2VkanUaaoOd7cNiWTRj8MqaKn6PVOt3E2rlZFrGhbLUFVD89ql0eWTWql2tqPdLcSf0U3tkBbUfLLJCLn5GdaoV9b4qXnM+Ou4Ee8r2VwEldkP5lZ8VFV+jWp3tbwoJ0vwS2dRUKy15HCja87gmteLoRHVNs5FA3wKqv7hYSrW2/asV9X6oZFokllA5szVD8Vl7+eXFHJGEb7XUMh0+LUfXbRuotdnhfGhciOEvn23QINMCSjmrgkPp1PrqC8ssExVUrWrJYZ5JJkIo2cjvFFnrhHxSImVSPPJxeFy8fCRQslGo1aLNWnGlTLRQyfrAp/IvdgnVimOlTB1FcyCDkmodK560+xbSqFWRmbxBeVQr6hyrZNKNoCmhkiaiUst5KS1Z+iqFYRmBFkrz+91jF6y4U52Z/EIFQU+plnXWijp3KpkCU5umh0qcVqllNyBUXqKqRVQPUJre10YtZZ6oXjjwAqVTC5m1lN0OO1FlplqgNCMajFrqBPFtG9CKfUHp0iU4a3WeFDJ1j0EDL39QTmrFgUomqJU+oTTzueqspV7UgQ9N/ELJ4qnGN2Yxoo5q+e0bYmXbM5RuwdGwlBaX15GT1TzM7T3vUJoJ+Lg0s1tcA9Xo8Q43MasBSqPWiaqg8baitQIyUwNQ6qx1FJaoendlJFBmagJKnbWGx4Xi9srtFJiZmoFSZ627nFidUiO1vPVaH5RSrR9rVJ1Sr2c7aa4TSrVe/GtJVWLCZKYGodKsVayrWM3UdXjwpGaopNMuVNbXlKpXGOv9dFkyrB1KjoIK5d+WxS+uhd45PR9UP5SslXwTHMdB/DX3fwZPbqtqTUAFnd85hk+9IJfDuoHjklojUEF8nKP6neskDp1X4JuBKlLl6sl9QbchqKJFa4ZF7rcUmoIKYsXYVcbQ1adGoYKe6gEc9pviRl1zUEFHcYv9hOTGT4NQUbmzGNPczGoQqjQ0ko2P5r5jk1BBWGA6JHp4ulGoTqGv+Ep0g7hRqOgpx9SlevKiUaigl1uO+Uz13EWzUPl7NdtUjyc0C5Xr1cdk71g0CxV01qB+kj310zTU2qTjx78CFa916k9kT/w0DbXWU9A9nNU01I8l05DuQbqGoaLVasX434Fa9elk44nmoZ7+RajtDRQwNlAbKFBsoMCxgdpAgWIDBY4N1CJmZDu7+IEKZ6pSV72TSDaf8wMVqQpd+Uos2dTHC1S4a/We7x5V+/MDtacsddUb2SOyhT8fUJavmc8+NpR6A6vKrRt2idqfDyiNUtVbN1C1Px9QmtZXCdXqf+CaUr85vwal27hGfKGpKg9Q7X1NmZcb15xpPkBVVR6gQk1FtdLNyBKoiXYzKBqr6KF0RsnWNcmg9FsF03SA5FC6rq+V7YWXQOk3l6TJVeRQmhyVQo0zKPas/Qy/JaCihmrf6subbhucQhk2oRUEWhFDGTct3FpCabeNS6j2naloodr7ptJeLqGMeyC71xUplHHLzJYYLKHYg779JdubRm59ICFUGN0ad5ed73M3hzLv/877bpvrkkElpy2YLv9iH+RsG2R9/5dVlss2yFRQ7dhYTa3llukZlKmrSD9uOp6yHijAFveLozAWW4tXVJVTG6SAqmx5SRGfWR5Kv1/o6jqgD9ajg6rcgDst4EEBytwBZldCfLfautoZqh19B2zXv9ricwk1qKzdlq1ajlDA8yJ4f1CCgjTAlp1aTlAQmdIQq3PDVlDmTdNXVHi1XKDAZ7CsHyyzBsUeocfKfMdlLXsomEwp0yNTQ7Et8AFAKLVsoRAHXYotpoOC1hVSLTsosEwlpgIU+LAmlFpWUJizwsQZM0HJ8RL0m+BZywIKLlNSkOIuwEUo1r1AHFQHUwsNhTs19qL0xn4JCnXYrQCphYTCyKQ+rVMBxcZbtCct46BwZ1puKV5lUkIxNr2gVAsDhZPponiYoAmKsQn4QL9qteBQOJn6pW3CK6CSvePhDXtmVAsKhZMpdzQdFIoNqNQCQiFlMpz/bYCSA3dE925QCwSFk+lNLRMEikgtABTm+EqDTDAonFqarFUJhTloVF48vUxQKDZ+QBxDq1SrCgon06MqM2GhpFrPmKxVnmuZoShlQkBh1QpCOBRRZrKBYsMzB7X0UPCjRVvmzGQFhVQrf0ykFoouM1lCpWrBL+q6WhoozEnYQJnwUIy9c8yh4MuspYSSmQl+ZjlUJhsoxhAn0q8OyVVAUWcmJyjWtVCrBBW2b4gzkxuUVAvTX43iBCsHFbZD2eX5kckaSqrVQmDtfInC1Uth4zi6GbUwlY2SyQGKDTBqcT4bTa674+G4O5287CCI5N/+qS4MFZRsRqeosgkhePYv+K8SmcCZiQQKpZZVWMnkCsXYOeayY8NOJncoNkSohQt0ZqKDYuzoPx9YXNxbykQCxdgBuVouMhFBkavlJBMZFCprVYVtZsoHARRj0zcaLGeZsiCBolGLi1PF1tw2QQSFugGkDjE7qP4VWJBBscGjSxukkSkLOiiplnXWopIpC0ooW7WkTK6ZKR+0UFZqEcqUBTUUWi3RIpQpC3IoXNYilikLD1CMXQLVkjIpTmBxDy9QjF1B1KKXKQtPUIDHFpRPQNCEL6j03qoBi/N7xfEmROEPSmatN81CCxf8XnG0B1n4hJId4VlfFOorWVS6ePfQ5a2FXygZ06tTCbZYIhOt58d3n5WUhncoGcPu9eX51dnZ+eSg67eKsqgDqvbYQP0tsYH6W+KfhPofxuFgtvH7JncAAAAASUVORK5CYII="
+                        style="height: 50px; width: 50px;">
+                    <div>
+                        <h3>Harum esse qui</h3>
+                        <p style="width: 550px; color: grey;">Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt</p>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+                    <img src="https://play-lh.googleusercontent.com/afPC0SKTkfeoXCSV1r83A4MWeEt44f-Og6U6Mc6_NK4RmbHkjq0YGjHovQeI3BM0it4=w240-h480-rw"
+                        style="height: 50px; width: 50px;">
+                    <div>
+                        <h3>Aut occaecati</h3>
+                        <p style="width: 550px; color: grey;">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                            maiores omnis facere</p>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+                    <img src="data:image/png;base64,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"
+                        style="height: 50px; width: 50px;">
+                    <div>
+                        <h3>Beatae veritatis</h3>
+                        <p style="width: 600px; color: grey;">Expedita veritatis consequuntur nihil tempore laudantium
+                            vitae denat pacta</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="margin-top: 10%;">
+
+            <h6 style="color: grey;">SERVICES</h6>
+            <h1><b>CHECK OUR SERVICES</b></h1>
+
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+
+            <div style="display: flex; gap: 20px; margin-top: 5%;">
+
+                <div
+                    style="background-color: white; border: 1px rgb(234, 233, 233) solid; height: 350px; width: 750px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 10px;">
+
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABYAFwDASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAIFBAMGAf/EAC4QAAICAAMHAwMEAwAAAAAAAAABAgMEERMFEiEzU3KRMVFhFEGBFVJicaGx0f/EABkBAAIDAQAAAAAAAAAAAAAAAAABAgQFA//EAB0RAAIDAQEBAQEAAAAAAAAAAAABAhExElEhMkH/2gAMAwEAAhEDEQA/APswAAAEOyCeTnFP+xq19SPkXS9HTLBGrX1I+Rq19SPkXS9CmWCNWvqR8jVr6kfIdL0KZYI1a+pHyfsZxk8oyT/pj6XoUygAMQIteVU2vXdZZFvKn2sUsY1pmAAxi8AAAAAAALpeV0Mv3Igurmw7kSj+kJ4aYANgogi3lT7WWRbyp9rIyxjWmYADHLx5YjEV4WmVt0t2K/z8Izf1HHXYrRpw9VDcd6CxEnnNfGX+isfZZLatMI0SvjVDf3ItLi3knxPHaVuLtpVk8NXhXVLehZbcs8/ZJe53hFfL/pzkzrjtCyi2FW0KY0ubyhZGWcJP2+DQPn6sTgL6XZjcRO66yGXGuWUPhJLgamybpX7OpnJ7zyyb98uGYpwpXQ4ys7C6ubDuRBdXNh3I5x1EnhpgA2CiCLeVPtZZFvKn2sjLGNaZgAMcvGftBzwt8MdCDnGEXC2MfXd+z/DGAojiFHG4iUbrZ8Y5PONa9l/00Dis2Tg5zc1U65P105OOf4R1UlVMg19s4q8V9H9VhKlvXu16MF/JZ5/CXE1MFR9LhK6c83FcX7v7k4bA4bCZ6FSi36y9W/y+J0CnJPBxVaC6ubDuRBdXNh3IjHUN4aYANgogi3lT7WWTNb0JRX3TQpYxrTLBbpsTy3JeBpWdOXgyOZeF20QC9Kzpy8DSs6cvAcvwLRAL0rOnLwNKzpy8By/AtEF1c2HchpWdOXgummx2xbi0k882iUYy6XwTao0AAaxSAAAAAAAAAAAAAAAAAAAAP//Z"
+                        style="height: 100px; width: 100px;">
+                    <h3><b>Lorem Ipsum</b></h3>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                </div>
+
+                <div
+                    style="background-color: white; border: 1px rgb(234, 233, 233) solid; height: 350px; width: 750px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 10px;">
+
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABTAGADASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAUDBAECBv/EACkQAAEDAQgCAQUBAAAAAAAAAAABAgMEBREUNFKBobEhMRITIiNBYXP/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQQCBQP/xAAiEQACAQMEAwEBAAAAAAAAAAAAAQIDETITFFFxBCExEkH/2gAMAwEAAhEDEQA/AP2YAAADkqKh7JFaxbkT+GWJm18ITy8iEXY9VSk1coAn4mbXwgxM2vhDO6hwx6MigCfiZtfCDEza+EDdQ4YaMigCfiZtfCDEy6+EDdQ4YaMigD4hf9SJrl9qfZSndXR5NW9AADET6rMO26MTaqzDtujE5NTN9lscUADgktuzopHMfUp8mrctzXL0hlRcviG2l9O8HPSV9NWo7DSo/wCPtLlRU2U6BNNemCdwABDKFLl279mxjS5du/ZsdenguiKWTAANmSfVZh23RibVWYdt0YnJqZvstjigvoj2VIyKgYronSK+dzftbfd5Xyv8LC+iFSSLHZCKlYlJ+Z/3qxHX+V8eRwV010KX05KtJKa0qmaGGoSdHosbmR3scl3lFL1nViV1K2X4Kx1/xc1f0qezhoZ3PqmNW2GVN9/40iRt+5tYeWm/3f2elT3H3/DMfpSABMepQpcu3fs2MaXLt37Njr08F0RSyYABsyT6rMO26MTaqzDtujE5NTN9lscUCIyitKCN0DIqKaJHq5v1UVV8qWwKMnEGrkZkFqRuRzKWzWuT0qNVFO2y6WWlplbOrVke9z1+PpLzsA5TbVgUbAAHmaKFLl279mxjS5du/ZsdenguiKWTAANmSfVZh23RiU3xMkW97b1PjDQ6OVIZ+NJybTKI1UlYngoYaHRyow0OjlTO1nyh60SeChhodHKjDQ6OVDaz5Qa0SeChhodHKnuGi0cqG1nyg1oily7d+zU8RERLkS5EPS6K/MUidu7uAAaEAAAAAAAAAAAAAAAAB//Z"
+                        style="height: 100px; width: 100px;">
+                    <h3><b>Set ut perspiciatis</b></h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+
+                <div
+                    style="background-color: white; border: 1px rgb(234, 233, 233) solid; height: 350px; width: 750px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 10px;">
+
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABXAFcDASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAMFBAYBAv/EACYQAAICAQQBBAIDAAAAAAAAAAACAQMEETSBsQUSITFBFZEjMlH/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgQFAQP/xAAfEQEBAAICAwADAAAAAAAAAAAAAQIyAxEhMXESYfD/2gAMAwEAAhEDEQA/APZgAAAAAAAAAAAAAAAEshpWhpidJKkcrbtx2Q5NKljtGeADJXQAHAAAAviNMXRET7T8kC2LuF56PTj3iOetaAANZSCOVt247LEcrbtx2Q5NL8Sx2jPABkLoctnksKp/Q+VVDfceqPY5s1rM3NjAreUrVfXcy/Mx9KdEYOBi0zrRStax7syxP7mT0/GT2j3b6dNdtdyQ9Tq6z8Ss6wfoxLa0w0/I+PWUq1/kr+Fdf9iPo2kaHRXWdYaNYOZY9eYS9vpbF3C89ES2LuF56O8e8+mWtaAANZSCOVt247LEcrbtx2Q5NL8Sx2jPABkLrGszKvG+XyWyplUuVZRoWZ10+jm8hn+Nz7KZsy7IrrnVq4rnRz0QPackl768/wB+kLjfTDzPN4N2FbTQzM7pKqvon3NbErmrEprb+ypET+iwIZZSzqR2S990LYu4XnoiWxdwvPR3j3n0y1rQABrKQRytu3HZYlkLLUNERrJDk0qWO0ZwAMldAAcAAAC2LuF56Il8RZm6JiPaPk9OPeI5613gA1lIAAAAAAAAAAAAAAAB/9k="
+                        style="height: 100px; width: 100px;">
+                    <h3><b>Magni Dolores</b></h3>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                </div>
+
+            </div>
+            <div style="display: flex; gap: 20px;">
+
+                <div
+                    style="background-color: white; border: 1px rgb(234, 233, 233) solid; height: 350px; width: 750px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 10px;">
+
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABKAE8DASIAAhEBAxEB/8QAGgAAAwEBAQEAAAAAAAAAAAAAAAQFAgEGA//EACsQAAIBAgQFAwQDAAAAAAAAAAABAgMEBREzchQhUWOiEhNhMUFxgRUy0f/EABgBAAMBAQAAAAAAAAAAAAAAAAADBAIB/8QAIBEAAgEFAQADAQAAAAAAAAAAAAECAxETMVEEEiFBMv/aAAwDAQACEQMRAD8A9k2km39EKu9WfKHL8jFXSntZMJfRUlBpRHU4KWxvje35Bxvb8hQCbPU6Nxx4N8b2/ION7fkKAGep0MceDfG9vyDje35CgBnqdDHHg7Tu1Oai45Z/IyTKWrDcimV0Jymn8hNSKi/oxV0p7WTCnV0p7WTBPq2jdHTAAJ2NYn/HW69CTrT5QT+3ySxi5OyHNpK7KIHgfdu8RuYwdSdWrN8k5ZL/ABHoaVvfYTawr+7KtCKzrUZPPJdYsfOh8f37FxqX/C6BmlUjWpRqQecZLNM0TjTdLVhuRTJlLVhuRTLvLpk9baMVdKe1kwp1dKe1kwx6to7R0wJF5b0rnGoUrmPqhO3ajn1z5/srimIWbuoQlSn7dek/VTn0fR/BPB2Y2SuiBbVbXAsQuKdxCdWSy9ucYptL9svW99QvrKdanmqaTUlJZNciJjEq91bxhcYdVjdQfKpCPqi19+aPjhWE31ZuNR1be2l/dNtepdMimUYyj8pOzFJtOy0XsDTWFUM8/o8s+mfIfOQhGnCMILKMVkkdJJO7bHJWVjdLVhuRTJlLVhuRTLfLpiK20Yq6U9rJhTq6U9rJhj1bR2jpgAARjwAAAAAAADdLVhuRTJlLVhuRTL/Lpk9baONJpp/Rirslnyny/A2BROnGf9IUpOOhTgu54hwXc8RsDGCnw1kl0U4LueIcF3PEbAMFPgZJdFOC7niHBdzxGwDBT4GSXRanaKE1Jyzy+BkAGRhGCtEw5OWz/9k="
+                        style="height: 100px; width: 100px;">
+                    <h3><b>Nemo Enim</b></h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                </div>
+
+                <div
+                    style="background-color: white; border: 1px rgb(234, 233, 233) solid; height: 350px; width: 750px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 10px;">
+
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABOAE8DASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAABQADBAIBBv/EADEQAAEDAQcCAwYHAAAAAAAAAAABAgMEERM0U4GRsQUSITFRFTI1QVJxIiNVYXOCkv/EABkBAAMBAQEAAAAAAAAAAAAAAAIDBAABBf/EACMRAAIABQQDAQEAAAAAAAAAAAABAgMRMlEEExRxEiExQfD/2gAMAwEAAhEDEQA/AP2Z4vY/rbuealbIH2BxNOnOW6JDYJfkqid7HmN3K9jzG7hhCuU8B7KyJ3seY3cr2PMbuGEblPBtlZE72PMbuV7HmN3DCNyng2ysijXNd7rkX7Keg+lWydv72iBTKmbkNRUcPi6GNVh3ach4hVYd2nIeSaq9dDpNpEQdUdTkZVPgp6OSoWNE7laqJZaTqFxfBraQiQX7SrP0qb/aHx/VaqNqvk6ZM1jUtVe9PBAtuL+aOeSFSPEMrZoWStt7XtRUtPYARtS4huvAgH0uIbrwIF+lsfZNOuMarDu05DxCqw7tOQ8Tqr10HJtIOovi9f8A04EQ2agrG1ks9HVMjSVE7kcy3yEwU9pjIvw+V0tezqULaNiPjVn40d7qePr8jq6hb7OqLbEW7W2z7BtS7q1PNTxrWRKsz+1FSJPDwNZKLqs0bo310Stcli/lfIPxXr2ga/Tt6d8Pp/428HSZ08SQQRxItvY1G2+poKfthr4bUuIbrwIB9LiG68CBdpbH2TzrjGqw7tOQ8QqsO7TkPE6q9dBybSIiJRwbL0KgmldI+Jyuctqr3r5nbTU8dLA2GFFRjfJFW01IJxxNUbOJJfCIiBOm1LiG68CAfS4huvAgehpbH2TTrjOdivhc1vmpwXUn0O2EyDmSVMdWwYJjhVAy6ky3bFdSZbthMhfFWQ954DLqTLdsV1Jlu2EyNxVk288Bl1Jlu2K6ky3bCZG4qybeeDipYnpKjlaqInqh2kQ+XLUtUQqKLydT/9k="
+                        style="height: 100px; width: 100px;">
+                    <h3><b>Dele Cardo</b></h3>
+                    <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                </div>
+
+                <div
+                    style="background-color: white; border: 1px rgb(234, 233, 233) solid; height: 350px; width: 750px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 10px;">
+
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABOAE8DASIAAhEBAxEB/8QAGQABAQEBAQEAAAAAAAAAAAAABQACBAMG/8QALRAAAQMCBQMDAgcAAAAAAAAAAQACAwQRBRQzcqESMVIhQVETMjRVYXOBkrH/xAAYAQEAAwEAAAAAAAAAAAAAAAADAAIEAf/EACQRAAICAQQCAQUAAAAAAAAAAAABAgMxBBETURIUMiFhkbHR/9oADAMBAAIRAxEAPwD7NeRqYgbdfBWpdJ+0oxZrrnW0kLXBSyIZmHz4KszD58FHqQe1PpCcMRDMw+fBVmYfPgo9SntT6ROGIhmYfPgqzMPnwUepT2p9InDESZNG82a65XojIdZm4JNaabHYm2FZBRf0MS6T9pRiTl0n7SjEGqyhKcMlKRGLz1UFXTtirG08UtwS5jSAR73KzRj5PYZvZbi6kD9ao/P6b+jFieqqooHyNxynkc1pIY1jLu/RX4n3+/4V8/sfQqXPh5ldRROnk+pI5vUXWt3XQia2exZG4tVm4JNGRarNwSa3aXDAuyjEuk/aUYk5dJ+0oxU1WUdpwyReKRslxHDmSMa9hc67XC4PolEVic0UeKYeZJGM6XOLupwFhZZ6/l+RZYPGURSTyRUGFU0wiNnvc1rRf4HosyCknwysORhgqIWEOb0Nu027ggLqwNwdDUuaQQah5BHv6rirZY46nFmvkYwvhaGgkDqNj2+Uy+Xj0G8bjND+Bg/bb/i91z4e5r6CAscHDoAuDf2XQs8ssVYNxarNwSaMi1Wbgk1t0uGBdlGJdJ+0oxJy6T9pRipqso7ThkvCeipqh4fPBHI4C13NuvdSyJtYGPOGCKnZ0Qxtjbe9miwXnLQUk8hklp43vPcubcroUu7vfcmyMRRRwxiOJgYwdgBYBbUpcOm4tVm4JNGRarNwSa3aXDM92UZe3qY5vyLLhNLKD9t/5CQUmsqjZkOM3HAflpvDkKy03hyEgpF6sO2X5pB+Wm8OQrLTeHISClPVh2yc0g/LTeHIVlpvDkJBSnqw7ZOaRxQ00gkaXCwBv3XapSautVrZByk5ZP/Z"
+                        style="height: 100px; width: 100px;">
+                    <h3><b>Divera don</b></h3>
+                    <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        style="background-image: url(https://t4.ftcdn.net/jpg/05/10/40/31/360_F_510403157_fhQpfySJrfTWUXD3yDqJ72F6meU7qalS.jpg); height: 350px; background-size: cover; margin-top: 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 20px; color: white;">
+
+        <h2><b>Call To Action</b></h2>
+        <p><b>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<br> deserunt mollit anim id
+                est laborum.</b></p>
+        <a href="https://bootstrapmade.com/demo/templates/Gp/#"><button type="button"
+                class="btn btn-outline-warning text-light"><b>Call To Action</b></button></a>
+    </div>
+
+    <div class="container" style="margin-top: 5%;">
+
+        <div>
+            <h6 style="color: grey;">PORTFOLIO</h6>
+            <h1><b>CHECK OUR PORTFOLIO</b></h1>
+        </div>
+
+        <div style="margin-top: 5%; display: flex;justify-content: center; gap: 10px;">
+            <button type="button" class="btn btn-warning">ALL</button>
+            <button type="button" class="btn btn-light">APP</button>
+            <button type="button" class="btn btn-light">CARD</button>
+            <button type="button" class="btn  btn-light">WEB</button>
+        </div>
+
+        <div style="margin-top: 10%;">
+
+            <div style="display: flex; gap: 20px;">
+
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                    <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/portfolio/portfolio-1.jpg"
+                        style="height: 400px; width: 400px;">
+                    <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/portfolio/portfolio-6.jpg"
+                        style="height: 700px; width: 400px;">
+
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                    <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/portfolio/portfolio-2.jpg"
+                        style="height: 300px; width: 400px;">
+                    <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/portfolio/portfolio-5.jpg"
+                        style="height: 650px; width: 400px;">
+                    <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/portfolio/portfolio-9.jpg"
+                        style="height: 250px; width: 400px;">
+
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                    <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/portfolio/portfolio-3.jpg"
+                        style="height: 250px; width: 400px;">
+                    <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/portfolio/portfolio-4.jpg"
+                        style="height: 300px; width: 400px;">
+                    <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/portfolio/portfolio-7.jpg"
+                        style="height: 250px; width: 400px;">
+                    <img src="https://bootstrapmade.com/demo/templates/Gp/assets/img/portfolio/portfolio-8.jpg"
+                        style="height:  300px; width: 400px;">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="margin-top: 10%;">
+
+            <div style="display: flex; gap: 30px;">
+
+                <div>
+                    <img src="https://stratacent.com/wp-content/uploads/2021/06/Managed-Svcs-2-scaled.jpg"
+                        style="height: 450px; width: 500px;">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                    <div style="width: 1000px; padding: 20px;">
+
+                        <h2><b>Voluptatem dignissimos provident quasi</b></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut<br>
+                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                    </div>
+
+                    <div style="display: flex; gap: 20px;">
+
+                        <div style="display: flex; flex-direction: column;">
+
+                            <div style="display: flex; gap: 10px;">
+
+                                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9EPDRnn5-k9JjMSHKRzNeYTT8-Tf_5N7RIT7Vp74VIZ0JplPr"
+                                    style="height: 50px; width: 50px;">
+                                <div>
+                                    <h1><b>65</b></h1>
+                                    <p style="color: rgb(79, 78, 78);"><b>Happy Clients</b> consequuntur voluptas<br>
+                                        nostrum
+                                        aliquid ipsam architecto ut.</p>
+                                </div>
+
+                            </div>
+
+                            <div style="display: flex; gap: 10px;">
+
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvimGzhoLJSr-8PYoligvn200bwFHE0udtacy_fc_Y6soViC9h"
+                                    style="height: 50px; width: 50px;">
+                                <div>
+                                    <h1><b>35</b></h1>
+                                    <p style="color: rgb(79, 78, 78);"><b>Years of experience</b> aut commodi
+                                        quaerat<br> modi aliquam nam ducimus aut voluptate non<br> vel</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div style="display: flex; flex-direction: column;">
+
+                            <div style="display: flex; gap: 10px;">
+
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADlCAMAAAAP8WnWAAAAdVBMVEX/////tQr/tAD/sQD/sAD/+vP/z3n/3KP/wUT/7M7/3KH/+Ov/vjT/9ef/5Lj/twb/6cj/xFb/04b/y2v/4rH/5r7/8tv/7dP/2Zj/36r/uyf/15H/yGD/0YX/2Zb/89//wkr/zHD/znr/0Xn/x1n/vjj/wEbWEKnOAAAE/klEQVR4nO3d61riMBCAYZoEWUApZyy6gu7i/V/iwqoPTTuBJp3JpDDfb9G8tvSUFnq9SK33Kquk5rH+OHETU7Nlmc763OPCaGfqtNOyO3APDKMFsNxOmSH3yBBy2DJ9C2877cCpD+6RIfToWHR6xD0yhEaORWduYnP5C1x0XV1wO2XKuVZL64c6s3XZujaQFzJT7lE3awjvtS+nFtzDbtbctfG/iFPcw25W/TC5SR3ZeOZhuCfucTcq5C13xK25x32p1fNXLyFvueOb7uHr5W9LbgjQwujvgmxH3ffLzZabUmsVtjJCpXe64Do8DtJxYyo5TrcDcStujl0R+k4DcYmtlx+Ia2WmZtwcO/i0JhSXc3PsMkxcZqKNe7N8nl8N1Zap63/wrWh/8Wz9rk87Z3UtVNvpHOFKp529XrTyjWeu0+gkUmYffrS90inTTikTeiRaYO6YqTLPQbZJF2xHXRFgG3fDFnYi+Jn6++0n5X+KNO3KgjseinqvmGFXeVjyPlrrzDvulO9MH+opDHW+p0jv3Vkr/WegMa8a0Od5tbpyYfXnylQqVf71nler7VdrNZ8O02k1mGk0nHnxem2M7N1wC5xOz1aZjG6DIxpfuxQKLrVrUd/9VSi4B6LhtWshODDBsSY4OMGxJjg4wbEmODjBsSY4uPRx74IDExxrgoO7a9yydvdG7LvLSXH2JfYbw/3ctvt17+6N4bT1CIcWHGaCg0sf9yA4sHDccoTcLiHc3rjmesMyjlvVWXDlqSWMXPfhC05wd4ezbrg642bX7/b2yrVB+SA9cN6WOx84Lx5x2zoeQybF2bfHx39amBBXVPdm5hVnzI0jxPXH1WI/LEyI409wcIJjTXBwgmPtt+DABMea4OAEx5rg4O4aN9lWrwb8wRlz4whxS1N95D72ZQZKnM7ycvFnVklxrkt7saLFMU9hCQ5OcKXuBFe7oNk2x8BZcHuD3CQhXKwpLMEJTnA3hFO/i8FPxUDd1tbSvpn0PLM6fkIu/n6uqP2DY8+szulw483abuO4RYssQhx/goMTHGuCg+sATgsOSnCsCQ5OcKwJDu6ucZPtwW4b+19AiKs9sxp98pEWZ00cx598JMVxT4S8CA5McKUEhxoLbjpBzvF9Cyy4WI91suBiTYQITnCC+2qG+1SnYsG5Pg/lb46b4sC5Jh9jRYjjn3wkxPXX1WJ/TSohjj/BwQmONcHBCY41wcEJjjXBwaWPexMc2DXc6vBpd4j9NdmEOP6HAylxx19dvhgQ/0ycFMc9VyA4OMGVEhxqLLjNFLlxQrhY83MsuFgTIc+CE5zg/hfrY1dJcWpenCs9HPgxw23v+NhVUhz3/Bwhjv9jVwlx4+GmUuyHAwlx/AkOTnCsCQ4ufdxIcGCCY01wcIJjTXBwgmNNcHCCY01wcIJjbSA4MMGxVuDgYl8ob9YEB/dJNLx24ayWmSYaXrtwvhYx00ui8bUqx8FlKvZDSA0qf+5EO5zrAT22douyrRXuuGbmv1IqM/b4PHF5RYc7z906e3C+uAPyPQm0KS+btaFNPnXwwy319d+ZTMrz5vG+4R6xR2Z4HWT12p31UuWett6mO4tOD3xx3Vl0autt6/Vre5NEMxt/XFdWTDMKsPV6U9OBZWdegmy93lqlvrdTpgi0HXswOuGlp8y+1cnY0zxHvtscLaMWvjvvervV+SslEmqyvjjqf5lCv9OsUg7dAAAAAElFTkSuQmCC"
+                                    style="height: 50px; width: 50px;">
+                                <div>
+                                    <h1><b>85</b></h1>
+                                    <p style="color: rgb(79, 78, 78);"><b>Projects</b> adipisci atque cum quia
+                                        aspernatur<br> totam laudantium et quia dere tan</p>
+                                </div>
+
+                            </div>
+
+                            <div style="display: flex; gap: 10px;">
+
+                                <img src="data:image/png;base64,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"
+                                    style="height: 50px; width: 50px;">
+                                <div>
+                                    <h1><b>20</b></h1>
+                                    <p style="color: rgb(79, 78, 78);"><b>Awards</b> rerum asperiores dolor alias
+                                        quo<br> reprehenderit eum et nemo pad der</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        style="background-image: url(https://media.istockphoto.com/id/1446097589/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.webp?b=1&s=170667a&w=0&k=20&c=Wh4ELq_ZcbpbBlsyPSV0tTQDkHPpiOPtKcu6cRT-gZ0=); height: 500px; background-size: cover; margin-top: 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 20px; color: white;">
+
+    </div>
+
+    <div class="container mt-5">
+
+        <div>
+            <h6 style="color: grey;">TEAM</h6>
+            <h1><b>CHECK OUR TEAM</b></h1>
+        </div>
+
+        <div class="container" style="display: flex; gap: 30px; margin-top: 5%;">
+
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="https://bootstrapmade.com/demo/templates/Gp/assets/img/team/team-1.jpg"
+                    style="width:100%">
+                <div class="card-body"
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <h4 class="card-title"><b>Walter White</b></h4>
+                    <p class="card-text" style="color: rgb(165, 164, 164);">Chief Executive Officer
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="https://bootstrapmade.com/demo/templates/Gp/assets/img/team/team-2.jpg"
+                    style="width:100%">
+                <div class="card-body"
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <h4 class="card-title"><b>Sarah Jhonson</b></h4>
+                    <p class="card-text" style="color: rgb(165, 164, 164);">Product Manager
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="https://bootstrapmade.com/demo/templates/Gp/assets/img/team/team-3.jpg"
+                    style="width:100%">
+                <div class="card-body"
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <h4 class="card-title"><b>William Anderson</b></h4>
+                    <p class="card-text" style="color: rgb(165, 164, 164);">CTO
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="https://bootstrapmade.com/demo/templates/Gp/assets/img/team/team-4.jpg"
+                    style="width:100%">
+                <div class="card-body"
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <h4 class="card-title"><b>Amanda Jepson</b></h4>
+                    <p class="card-text" style="color: rgb(165, 164, 164);">Accountant
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container" style="margin-top: 10%;">
+
+        <div>
+            <h6 style="color: grey;">CONTACT</h6>
+            <h1><b>CONTACT US</b></h1>
+        </div>
+
+        <div
+            style="background-image: url(https://developers.google.com/static/maps/images/landing/hero_maps_static_api.png); background-size: cover; height: 300px; margin-top: 5%; padding: 20px;">
+
+            <div style="background-color: white;  height: 60px; width: 350px; padding: 10px;">
+
+                <h6>Downtown Conference Center</h6>
+                <a href="https://maps.google.com/maps?ll=40.710059,-74.006138&z=13&t=m&hl=en-US&gl=US&mapclient=embed&cid=13302823950184191043"
+                    style="font-size: 90%;">View larger map</a>
+
+            </div>
+
+        </div>
+
+        <div style="display: flex; gap: 50px; margin-top: 5%;">
+
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+
+                <div style="display: flex; gap: 20px;">
+
+                    <img src="data:image/jpeg;base64,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"
+                        style="height: 60px; width: 60px; border-radius: 10px;">
+                    <div>
+                        <h3>Location:</h3>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkBI_ylmZHZ69nhRhN2qr_PArPJVpncSH6HQ&usqp=CAU"
+                        style="height: 60px; width: 60px; border-radius: 10px;">
+                    <div>
+                        <h3>Email:</h3>
+                        <p>info@example.com</p>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSawsmJUW8Xb0eK3z_RzLpkebCUfIVvS_DbXQ&usqp=CAU"
+                        style="height: 60px; width: 60px; border-radius: 10px;">
+                    <div>
+                        <h3>Call:</h3>
+                        <p>+1 5589 55488 55s</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container" style="display: flex; flex-direction: column; gap: 40px;">
+
+                <div class="d-flex" style="gap: 30px;">
+                    <input class="form-control border-warning" type="text" name="name" id="name"
+                        placeholder="Your Name">
+                    <input class="form-control border-warning" type="text" name="E-mail" id="E-mail"
+                        placeholder="Your E-mail">
+                </div>
+
+                <div>
+                    <input class="form-control border-warning" type="text" name="Subject" id="Subject"
+                        placeholder="Subject">
+                </div>
+
+                <div>
+                    <textarea class="form-control border-warning" type="text" name="Message" id="Message"
+                        placeholder="Message" style="height: 100px;"></textarea>
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="button" class="btn btn-warning">Send Message</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        style="background-color: rgb(30, 29, 29); height: 400px; margin-top: 5%; padding-top: 2%; border-bottom: 1px rgb(204, 202, 202) solid;">
+
+        <div class="container" style="display: flex; gap: 80px;  color: white;">
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                <h2><b>GP<b style="color: yellow;">.</b></b></h2>
+
+                <p>A108 Adam
+                    Street<br>
+                    NY 535022, USA</p>
+
+                <div>
+                    <p><b>Phone: </b>+1 5589 55488 55</p>
+                    <p><b>Email: </b>info@example.com</p>
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="background-color: rgba(249, 248, 248, 0.2); height: 40px; width: 40px; border-radius: 5px; padding: 5px;"><img
+                            src="https://icon-library.com/images/twitter-icon-white-transparent/twitter-icon-white-transparent-24.jpg"
+                            style="height: 30px; width: 30px;"></a>
+
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="background-color: rgba(249, 248, 248, 0.2); height: 40px; width: 40px; border-radius: 5px; padding: 5px;"><img
+                            src="https://assets.stickpng.com/thumbs/60fea6c83d624000048712b7.png"
+                            style="height: 30px; width: 30px;"></a>
+
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="background-color: rgba(249, 248, 248, 0.2); height: 40px; width: 40px; border-radius: 5px; padding: 7px;"><img
+                            src="https://www.seekpng.com/png/detail/1-19750_instagram-white-logo-instagram-logo-png-white-outline.png"
+                            style="height: 25px; width: 25px;"></a>
+
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="background-color: rgba(249, 248, 248, 0.2); height: 40px; width: 40px; border-radius: 5px; padding: 5px;"><img
+                            src="https://assets.stickpng.com/thumbs/60fea6c83d624000048712b7.png"
+                            style="height: 30px; width: 30px;"></a>
+
+                    <a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="background-color: rgba(249, 248, 248, 0.2); height: 40px; width: 40px; border-radius: 5px; padding: 5px;"><img
+                            src="https://i.pinimg.com/736x/4c/87/d1/4c87d1c257a7b9cc3f28f4c98c5a7686.jpg"
+                            style="height: 30px; width: 30px;"></a>
+                </div>
+
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                <h5>Useful Links</h5>
+                <li style="color: orange;"><a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">Home</a></li>
+                <li style="color: orange;"><a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">About us</a></li>
+                <li style="color: orange; text-decoration: none;"><a
+                        href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">Services</a></li>
+                <li style="color: orange; text-decoration: none;"><a
+                        href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">Terms of Service</a>
+                </li>
+                <li style="color: orange;"><a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">Privacy policy</a>
+                </li>
+
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                <h5>Useful Links</h5>
+                <li style="color: orange;"><a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">Web Design</a></li>
+                <li style="color: orange;"><a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">Web Development</a></li>
+                <li style="color: orange;"><a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">Product Management</a></li>
+                <li style="color: orange;"><a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">Marketing</a>
+                </li>
+                <li style="color: orange;"><a href="https://bootstrapmade.com/demo/templates/Gp/#"
+                        style="color: white; text-decoration: none;">Garphic Design</a>
+                </li>
+
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-left: 5%;">
+                <h4>Our Newsletter</h4>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <form action method="post" style="display: flex;">
+                    <input class="form-control" type="E-mail" name="E-mail">
+                    <input class="form-control bg-warning" type="submit" value="Subscribe" style="width: 200px;">
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div
+        style="background-color: black; height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+
+        <p style="color: white;">© Copyright Gp. All Rights Reserved<br>
+            Designed by<a href="https://bootstrapmade.com/"
+                style="color: orange; text-decoration: none;">BootstrapMade</a></p>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prectical-48</title>
+
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa8BsGVghk2W_7YUAw6JcuzDFO17DSQvXOgOzoBLjYidGi0osxQPh1xwDzkUUxBrbwHGE&usqp=CAU">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="bg-light"
+        style="height: 70px; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 40px; position: static;">
+
+        <div>
+            <a href="https://www.wix.com/"
+                style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 200%; color: black;"><b>WiX</b></a>
+        </div>
+
+        <div style="display: flex; gap: 20px; margin-left: 50%;">
+            <div style="border-right: 1px grey solid; padding-right: 50px;">
+                <a
+                    href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=ec8425b7-fbee-4288-a979-2debce70eefa"><img
+                        src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTh5PkUbV7qtXTQ7oj6pdmmXeix3T-BiOnb238_f4-iMAVNUpq-"
+                        style="height: 30px; width: 40px;"></a>
+            </div>
+
+            <a
+                href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=ec8425b7-fbee-4288-a979-2debce70eefa"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TIFrStUKejxe3z0bcz6sYlVAe6uHqaSx7sD984EcJ3JSHXOI"
+                    style="height: 30px; width: 40px;"></a>
+        </div>
+
+        <div style="display: flex; gap: 20px;">
+            <p style="margin-top: 1%;">Click edit and create your own amazing website</p>
+            <a href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=ec8425b7-fbee-4288-a979-2debce70eefa#"
+                style="color: rgb(12, 12, 12); margin-top: 1%;">Read
+                More</a>
+            <a
+                href="https://manage.wix.com/edit-template/from-intro?originTemplateId=e5270f42-25b8-4f7a-aafb-2e609a06e17f&editorSessionId=ec8425b7-fbee-4288-a979-2debce70eefa"><button
+                    type="button" class="btn badge-pill btn-primary" style="width: 130%;">Edit this site</button></a>
+        </div>
+
+    </div>
+
+    <div
+        style="background-color: lemonchiffon; height: 50px; width: 100%; display: flex; justify-content: center; align-items: center; position: relative;">
+
+        <p style="margin-top: 1%;">Free shipping on all international orders over $35 <a
+                href="https://www.wix.com/demone2/re-vert/shop-all" style="color: black;"><u>Shop Now</u></a>
+            📦</p>
+
+    </div>
+
+    <div
+        style="background-color: rgb(253, 246, 231); height: 60px; width: 100%; display: flex; justify-content: space-around; align-items: center; position: relative;">
+
+        <div>
+
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                    body {
+                        font-family: 'Lato', sans-serif;
+                    }
+
+                    .overlay {
+                        height: 100%;
+                        width: 0;
+                        position: fixed;
+                        z-index: 1;
+                        top: 0;
+                        left: 0;
+                        background-color: rgb(251, 231, 166);
+                        background-color: rgb(251, 231, 166);
+                        overflow-x: hidden;
+                        transition: 0.5s;
+                    }
+
+                    .overlay-content {
+                        position: relative;
+                        top: 25%;
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+
+                    .overlay a {
+                        padding: 8px;
+                        text-decoration: none;
+                        font-size: 36px;
+                        color: #243602;
+                        display: block;
+                        transition: 0.3s;
+                    }
+
+                    .overlay a:hover,
+                    .overlay a:focus {
+                        color: #657f35;
+                    }
+
+                    .overlay .closebtn {
+                        position: absolute;
+                        top: 20px;
+                        right: 45px;
+                        font-size: 60px;
+                    }
+
+                    @media screen and (max-height: 450px) {
+                        .overlay a {
+                            font-size: 20px
+                        }
+
+                        .overlay .closebtn {
+                            font-size: 40px;
+                            top: 15px;
+                            right: 35px;
+                        }
+                    }
+                </style>
+            </head>
+
+            <body>
+
+                <div style="display: flex;" id="myNav" class="overlay">
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="https://www.wix.com/demone2/re-vert">R.V.</a>
+
+                    <div class="overlay-content">
+                        <a href="https://www.wix.com/demone2/re-vert">Home</a>
+                        <a href="https://www.wix.com/demone2/re-vert/shop-all">Shop All</a>
+                        <a href="https://www.wix.com/demone2/re-vert/our-mission">Our Mission</a>
+                        <a href="https://www.wix.com/demone2/re-vert/contact">Contact</a>
+                        <a href="https://www.wix.com/demone2/re-vert/faq">FAQ</a>
+                    </div>
+
+                    <div class="overlay-content">
+                        <p>Shop Collections:</p>
+                        <a href="https://www.wix.com/demone2/re-vert">Kitchen</a>
+                        <a href="https://www.wix.com/demone2/re-vert/shop-all">Bath</a>
+                        <a href="https://www.wix.com/demone2/re-vert/our-mission">On the Go</a>
+                        <a href="https://www.wix.com/demone2/re-vert/contact">Sale</a>
+                    </div>
+
+                </div>
+
+
+                <span style="font-size:30px; cursor:pointer" onclick="openNav()"> Menu</span>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.width = "0%";
+                    }
+                </script>
+
+            </body>
+
+        </div>
+
+        <div>
+            <a href="https://www.wix.com/demone2/re-vert"
+                style="color: black; font-size: 200%; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;">R.V.</a>
+        </div>
+
+        <div style="display: flex; gap: 50px; margin-top: 20px;">
+
+            <a href="https://www.wix.com/demone2/re-vert/cart-page"
+                style="color: black; font-size: 120%; font-family: Georgia, 'Times New Roman', Times, serif;  text-decoration: none;">Cart
+                (0)</a>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-person-workspace" viewBox="0 0 16 16">
+                    <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                    <path
+                        d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z" />
+                </svg> Log In </p>
+        </div>
+
+    </div>
+
+    <div
+        style="background-image: url(https://t4.ftcdn.net/jpg/01/41/08/51/240_F_141085192_umalu6LJ6GmiXC9zIEenQhnrEzKnib3T.jpg); background-size: cover; height: 780px; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+        <h1 style="font-size: 300px; font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(212, 196, 75);">
+            <b>Re.vert</b>
+        </h1>
+        <h2 style="font-size: 300%; font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(212, 196, 75);">
+            <b>Home Essentials for Sustainable Living</b>
+        </h2>
+        <a href="https://www.wix.com/demone2/re-vert/shop-all"><button type="button" class="btn badge-pill mt-5"
+                style="height: 50px; width: 200px; background-color: rgb(212, 196, 75); font-size: 120%;">Shop
+                Now</button></a>
+
+    </div>
+
+    <div class="mt-5" style="display: flex; flex-direction: column; align-items: center;">
+
+        <h1 style="color: rgb(39, 52, 3); font-family: Georgia, 'Times New Roman', Times, serif;"><b>New In</b></h1>
+
+        <div class="mt-5" style="display: flex; gap: 30px;">
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <a href="https://www.wix.com/demone2/re-vert/product-page/Eco-Glass"><img
+                        src="https://static.wixstatic.com/media/c837a6_5de8806975bb49d980a0aeb2df4eb9cd~mv2.jpg/v1/fill/w_381,h_508,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_5de8806975bb49d980a0aeb2df4eb9cd~mv2.jpg"
+                        style="border-radius: 20px; height: 600px;width: 400px;"></a>
+                <a href="https://www.wix.com/demone2/re-vert/product-page/Eco-Glass"
+                    style="text-align: center; color: rgb(39, 52, 3); font-size: 120%; text-decoration: none;">Eco
+                    Glass<br> $5.50</a>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <a href="https://www.wix.com/demone2/re-vert/product-page/CompostableKitchenSponges"><img
+                        src="https://static.wixstatic.com/media/c837a6_a568444e48684d32bb82ed0222281565~mv2.jpg/v1/fill/w_381,h_508,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_a568444e48684d32bb82ed0222281565~mv2.jpg"
+                        style="border-radius: 20px; height: 600px;width: 400px;"></a>
+                <a href="https://www.wix.com/demone2/re-vert/product-page/CompostableKitchenSponges"
+                    style="text-align: center; color: rgb(39, 52, 3); font-size: 120%; text-decoration: none;">Compostable
+                    Kitchen Sponges <br> $7.00</a>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <a href="https://www.wix.com/demone2/re-vert/product-page/BambooToothbrush"><img
+                        src="https://static.wixstatic.com/media/c837a6_c4b10cbdda5049acb53cb7597aa2bd14~mv2.jpg/v1/fill/w_500,h_667,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_c4b10cbdda5049acb53cb7597aa2bd14~mv2.jpg"
+                        style="border-radius: 20px; height: 600px;width: 400px;"></a>
+                <a href="https://www.wix.com/demone2/re-vert/product-page/BambooToothbrush"
+                    style="text-align: center; color: rgb(39, 52, 3); font-size: 120%; text-decoration: none;">Bamboo
+                    Toothbrush <br> $5.50</a>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <a href="https://www.wix.com/demone2/re-vert/product-page/WoodBrush"><img
+                        src="https://static.wixstatic.com/media/c837a6_00f5773295d145f8959baf2957fd3f51~mv2.jpg/v1/fill/w_381,h_508,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_00f5773295d145f8959baf2957fd3f51~mv2.jpg"
+                        style="border-radius: 20px; height: 600px;width: 400px;"></a>
+                <a href="https://www.wix.com/demone2/re-vert/product-page/WoodBrush"
+                    style="text-align: center; color: rgb(39, 52, 3); font-size: 120%; text-decoration: none;">Wood
+                    Brush <br> $7.00</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mt-5"
+        style="background-color:  rgb(164, 169, 131); height: 600px; width: 100%; display: flex; justify-content: space-between; padding: 150px;">
+
+        <div style="display: flex; flex-direction: column; gap: 30px;">
+            <h1
+                style="font-size: 400%; font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(66, 77, 35); ">
+                Zero Waste<br>
+                Bath Products</h1>
+            <h5 style="color: rgb(66, 77, 35);">Where quality meets eco-friendly</h5>
+            <div class="abc">
+                <a href="https://www.wix.com/demone2/re-vert/bath"><button type="button" class="btn badge-pill mt-3"
+                        style="height: 50px; width: 120px; background-color: rgb(66, 77, 35); color: white;">Shop
+                        Now</button></a>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://static.wixstatic.com/media/c837a6_7525c017b9c54e089583eee948271588~mv2.jpg/v1/crop/x_209,y_1448,w_4040,h_3568/fill/w_541,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/shutterstock_2005823990.jpg"
+                style="height: 500px; width: 550px; border-radius: 20px; margin-top: -15%;">
+        </div>
+
+    </div>
+
+    <div class="mt-5" style="display: flex; flex-direction: column; align-items: center;">
+
+        <h1 style="color: rgb(39, 52, 3); font-family: Georgia, 'Times New Roman', Times, serif;"><b>Shop
+                Collections</b></h1>
+
+        <div class="mt-5" style="display: flex; gap: 40px;">
+
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <a
+                    href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=eda0c3df-d6d1-423d-bbe0-2a167d2873d9"><img
+                        src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbMt0bpoIa3Z1HigLizqRANaRY4BuOD1yDXrrsPsZqgq4PxJxY"
+                        style="height: 500px; width: 500px; border-radius: 20px;"></a>
+                <a href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=eda0c3df-d6d1-423d-bbe0-2a167d2873d9"
+                    style="text-align: center; color: rgb(39, 52, 3); font-size: 120%; text-decoration: none;"><b
+                        style="color: rgb(100, 93, 33); font-size: 200%;">Kitchen</b><br>Shop
+                    Collection</vr>
+                </a>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <a
+                    href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=eda0c3df-d6d1-423d-bbe0-2a167d2873d9"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2MpazlVKCN0rGDZf0t2MUbbC2JNeB5YHx-r2Fu8fzJDVMRoFZ"
+                        style="height: 500px; width: 500px; border-radius: 20px;"></a>
+                <a href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=eda0c3df-d6d1-423d-bbe0-2a167d2873d9"
+                    style="text-align: center; color: rgb(39, 52, 3); font-size: 120%; text-decoration: none;"><b
+                        style="color: rgb(100, 93, 33); font-size: 200%;">Bath</b><br>Shop
+                    Collection</vr>
+                </a>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <a
+                    href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=eda0c3df-d6d1-423d-bbe0-2a167d2873d9"><img
+                        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScX4DM7MVWfwT7zOd7njHLje8ZVFWQOXz65a-grz6DkJnqHrEl"
+                        style="height:500px; width: 500px; border-radius: 20px;"></a>
+                <a href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=eda0c3df-d6d1-423d-bbe0-2a167d2873d9"
+                    style="text-align: center; color: rgb(39, 52, 3); font-size: 120%; text-decoration: none;"><b
+                        style="color: rgb(100, 93, 33); font-size: 200%;">On the Go</b><br>Shop
+                    Collection</vr>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mt-5"
+        style="display: flex; flex-direction: column; align-items: center; background-color:  rgb(220, 218, 200); height: 950px; width: 100%; color: rgb(64, 75, 34); text-align: center; gap: 30px;">
+
+        <h1
+            style="color: rgb(64, 75, 34); font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 2%; font-size: 400%;">
+            The Re.vert Mission</h1>
+        <p>We believe in ethical and smart shopping. All of our products are carefully<br> selected to ensure they align
+            with our core values.</p>
+
+        <div style="display: flex; gap: 100px; margin-top: 3%;">
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCACBAHADASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAQDAgUBBv/EADoQAAICAQEEBggDBwUAAAAAAAECAAMEEQUSITETIkFRYYEUMlNxcpGhwRVCUiQzNWOTsdEjJUOSwv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AP0kREwEREBERAREQEREBERAREQEREBESbLzBjla0U23v6lY5nxPcIFDsqKWdgqjmSdAJJ+JV2cMWq3IPei6L8zwnyvBNpFme/TPzCfkXy7fOWgADQDQCBGbNoN6uPRX8dhP9hPmu0xzXEbwBYS2IEfpWTX+/wANivfUwf6cDNcfNoyGK1v1xzRhow8jN5jkYlOSALU1I5MODD3GBtE883X7PYDIY3Yx4dLp1k+LvHjPQVgyhlIII1BHbAREQEREDDMyfRqxurv2ud2tB+Y/4nOHidBvWWHfyLONj/YeEyxP2rKszD6i610+7tPmZdAREi2gzl8ahHZOls0YqdDoASeMC2JAtZxtoUIt1zrYr7wscty005++bbSsarZ971kqwXgR2QKYnnZVBw61vrvvbddd4PYWBBIB4GejAEBgQwBB4EHtnnr/ALZaE4+h2N1f5THs9xnoTi6pb6XqsGquNDA7iSbPtdq2ou420HcY947D5iVwEnz7TRhWuvrbui+88B9TKJFtQ61UJ+u9F+uv2gUYtIx8aukfkUCaxEBIbuvtjGX2dbv89BLpDV19sZDezqVPmSYHeR/E8P4LP/MbW/hmR8E+ZiX+k491FQt6MOCpfd56f4mGUc/KxrKfQlTfGm90wOn0kFW0k39n5AHPcJHlxm9T9JUj/qUGfXUPWyHkwIk2zGLbOx9eYQKfLh9pRVERAicdDtZG/LkVlT8S8R9NZbItoHdtwn7rwvzBEtgJFtQaVUP+i9G+un3lswz6jfhWovrbuq+8cR9RA3iZ41wyMau0cnUGaQEh2f18jOt77tz/AKgCXSLZHWwuk7bXd/mTA3ysgYtXSsjMgPWK8d0d84fNqFtNVetr28QE46L+o+E7y3uSnTHr6SxjujXkPE+EhxcK3ZtymsC6u3QWaAAqe8eHhA9SR7N6tV1fs7nUfPX7yySYnVzs1OzeVx5rp9oFcRECLaA3rcJO+8N8gTLZG/8ArbVRfy49ZY/E3AfTWWQERECHE/ZcqzEPqNrZT7u0eRl0nzcX0msbjblqHercdh/xOcLL9IDV2r0eRXwsT7jwgVEagg9s83GyGwKRjX0Wno+CvWhYMOw+BnpRAi/FKvY5P9Ex+KVexyf6JlsQIvxSr2OT/RM6xFd77smxDX0gCqrcwBrxPzlcQE4utWil7bDoqDUzskAEkgAcyZ5y67UvD8Rh1N1f5rDt9wgbbPqda2vu/e3nfYdw7B5CVxEBERASfKxBfu2IxrvT1LBzHge8eEoiBEmcaiK85OhfkH5o3n2ectBBGoOoM+OqupV1DKeYI1Bkf4bXWdcW23HPcjar8jwgWxI+j2gvq5FFnx1kf2M+abTPNsRfEBjAtmORl04wBtfQnko4sfcJj6Jk28L81gvdSoT68TNcfCx8Zi1adc83Y6sfMwJ+iuz2ByFNOMP+LXrP8XcPCXqAqhVAAA0AHZEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/2Q==">
+                <h6>Sustainable</h6>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAB+AIMDASIAAhEBAxEB/8QAGgABAQADAQEAAAAAAAAAAAAAAAQCAwUBBv/EADkQAAICAQEEBgcGBgMAAAAAAAABAgMEEQUSIVETMUFhkaEVIjJScYHRFCMzQ1PBQlRVY3KxYuHx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+kABgAAAAAAAAAAAAAAAAAAAAAAAAAAADaSbb0S7WTZeZHG3YRi7L5+xXHrf0RqWFZktSz7N9daphwgvjzAzntLGUnGuTun7tUXJ+XA8eZky/DwLX/nOMf3K4QhXHdhGMY8orRHoESy8te3s+en/ABtiz30lVB6ZFduP32Q4eK4Fga1Wj4oDGuyFsd6ucZx5xeqMiS3Z8N924snj284dT+K6meU5k4XLHzIqFr9ia9mz4d/cBYAAAAAAAAAABPmZX2eMYwjv3WPSuHN/QobSTbeiXWyHBTybrM2a4T9WpPsgu35gbcPDWPvWWS6TIs4zsfb3LkikAACKefOVs4YmNPI3HpKSkoxT5avrJsx5+UoQ+xTjWnrOKvinLktQOsDgzw7t19Dsuyqz+Gay9Wn4l9eTtBVxU9nuUklq1dFasgvNeRj15VTqujvRfk+aNeLlxyHOEoSquh7Vcutd/eigoixbp02/Y8qTlNLWux/mR+qLSfOx3kUaQelsHv1y5SRliZCyseFqWjfCS5PtQG4AAAAAAAEm1JtYcq4P17mq4/Ph/rUqrgq64wj7MUkiTNe9mYNfOyUvCL+pYAAAHGxM23Drjiywrp2relw04pyfHzKPSd39OyfA2ZHqbWxJe/CcH5MtIrnek7v6dk+A9J3f07J8DomNs+jqnP3YtlRzcK6WZtBZUaJ11dC4b0u173/p1CTZUNzZuOucE/Hj+5WAIsX7naGVT2T0uj8+D80Wkdz3NrYr9+ucfDRgWAAAAAAAAiy1ptDBn2b04+Mf+i0j2n6lEL1+RZGb+HU/JssT1Wq6gAAAi2j6t2FZyvUfFNEdt1vR5WWrbFKnIUIwUvV3U0tNPmWbX4YXSfp2Qn4SRlPZ1M7XNysUZSU5VqXqyku1r5EE855OPkuclOSlKSinP1Z6+ykteGnHV6C6+C2Tkbtztn0bcpNNa73atezkXyphK3pJat7u6k+pLt0OdmYcMfE6OM5zds66lvtcEnwS8wrpUQ6OiuHuxS8jMAqBFkLe2phr3Y2S8kv3LSOv77ats17NNar+b4v9gLAAAAAAAAY21xtqnXP2Zpp/Mm2dZLo5Y9r+9oe4+9dj8CsjzabYWRy8Va2wWkofqR5fHkBYDXj5FeVTG2p6xl4ruZsAm2nDpNnZEf7bfhxN1E+korn70U/IylFTi4yWqa0aI/Q+B/LR8X9QLSLaHrZGFXzu3vBNj0Pgfy0fF/Uzo2biY9qsppUZrqerAqADaSbb0S62Bryb441E7Z9UV1c3yNWBTOnH1t/Fsk7J/F9hPW3tLIjbxWJVLWCf5kl2/BHRAAAAAAAAAAACK7Fsptlk4SSnLjZU+EbPo+824+bVkS3E3C1ddc1pJFBpyMWnKilbDVrqkuDXwYG4EX2bLp/Ay+kXu3x181xPXdtCHXiVT/wt0/2gLARLIz5dWDCHfK5fsj11593t3VUR/tx3n4v6AUX5FWNDfumors1638ER7lu0X97GVWIuqD4Ss+PJdxvowaqZ9I96239Sx7z+XIpA8jFQioxSjFLRJLgkegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z">
+                <h6>Zero Waste</h6>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABrAGkDASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAQDAgUBBv/EADwQAAEDAgMEBgULBQEAAAAAAAEAAgMEERIhMQUTQVEUFTNhobEyUnGBkSIjJEJTYnJzgsLRREVUdNLh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A/SIiLAIizmnip2Y5nhjeZQaIohVVVRnTUwYw6PmNr/pGa+9Fqn9rXPHdGwNA8ygsRRdXHXptZfnvP/F96LVM7Kuee6RgcD5FBYiiNVVU+dTTB7Bq+E3t+k5qmGeKoZjheHt5hBoiIgIiICIsauoFNAZLYnXAa31idAg4rKvcFsUTDLUSegweZ5BcU1CGv31U4TVB+sdG9zRwXdHTGEOlmIfUSZvdy7h3BUoCIiAikO0YRW9Gzvpjt8nF6t+arQFHU0Ic/fUrhDUD6w0d3OHFWIgmo6vfl0UrDFUR+mw+Y5hUqaspjMGywkMqI82O59x7iu6SoFTAJLYXXIc31SNQg2REQFCPpW03E9nS5Ac3ka+4K4mwJOgUeyhejEp9KZxkd7z/ABZBYiKaqrRTSxxbmSR8gJaGAcNeKClYV05pqOSVou4CzR3nIeKw6ywdtSVMbfWwXA+CzrqiGopIpIZGvY2ZhdbgL8UGnVzerej3+c9LHxx63+K3oZzU0ccrhZxFnDvGR8VuvMoqmGmppXyyBjHTvwcyL8BxQemih6wkf2NDUPHNwDb/ABWlJWGolkjdC+J8dsQcQdfYgqUJ+i7TaR2dVkRyeBr7wrlHtUWozKPShcJG+4/xdBYiA3AI0KIMqtxZSTuGojcfBc0Aw0FOB9k3yWsrN5E9nrNIU+zHYtnU55RgfDJBUpdoQPmha+HtonY4+8jh71UiDGkqWVUIkZkdHNOrTxBUu0tmNqY3vg+bnIzIyD+4/wArWehLpTPTSmCc6kC7Xe0LgTbRjyfSRS/eZLhv7ioJ+th1Xj/quzwccemnittmbMbSRtfL8ue2pzw9wXnbmfrzfdCGPDvN3vR7L3XpmXaMhsynhhHN8mLwCKoq6plLDjd8pxyYwauPABc0MDoISZTeaRxfIe88PcuKehDJd/PIZ57WDnCwb7BwVaqCwrxioKgH7J3kt1LtN2HZ1QecZHxyQa0ji+kgcdTG0+C1XMTN3ExnqtAXSAoqA7qappjlgfjaPuuz87q1RV7TC+OtjBJiykA4sOvw1QWovjHtkYHsIc1wuCOK+oCIiCL+9j/W/crVDc9fW4dF/crkBERAUVed7NTUwzxvxuH3W5+dlY97Y2F7yGtaLkngo6BpmfJWyAgy5Rg8GDT46oLUREBCLix0REHnDFsuU5F1C83yz3J/5XotIc0OaQQcwRxQgEWIuCoeiz0hLqIh0RNzA85D8J4ILkUke0oHOwSkwS8WS5eOhVYIIuDcFAtnfiiISALk2AQEcQ1pc4gAZkngpJNpQNdgiJnl4Miz8dAuOiz1ZDq0hsQNxAw5H8R4oODi2pKMi2hYb55b4/8AK9ECwsNEAAFgLAIgIiICIiAiIg5kjZK3DIxr28nC4Up2XTDsw+L8uRzfC6sRBF1aP8ysty3q+jZdMe0D5fzJHO8LqxEHMcbIm4Y2NY3k0WC6REBERAREQf/Z">
+                <h6>Vegan</h6>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <img
+                    src="data:image/jpeg;base64,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">
+                <h6>Recycled</h6>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <img
+                    src="data:image/jpeg;base64,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">
+                <h6>Fair Trade</h6>
+            </div>
+
+        </div>
+
+        <p style="margin-top: 4%;">I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click
+            “Edit Text” or double
+            click<br> me to add your own content and make changes to the font. Feel free to drag and drop me anywhere
+            you
+            like<br> on your page. I'm a great place for you to tell a story and let your users know a little more about
+            you.</p>
+
+        <p>This is a great space to write a long text about your company and your services. You
+            can use this space to go<br> into a little more detail about your company. Talk about your team and what
+            services you provide. Tell your<br> visitors the story of how you came up with the idea for your business
+            and
+            what makes you different from your<br> competitors. Make your company stand out and show your visitors who
+            you
+            are.</p>
+
+        <a href="https://www.wix.com/demone2/re-vert/our-mission"><button type="button" class="btn badge-pill mt-3"
+                style="height: 40px; width: 120px; background-color: rgb(66, 77, 35); color: white; ">Learn
+                More</button></a>
+
+    </div>
+
+    <div
+        style="background-image: url(https://media.istockphoto.com/id/1185102507/photo/woman-with-a-tropical-plant.jpg?s=612x612&w=0&k=20&c=CJ6GFe_fd707Vn8lG67Ia_B6T1XWHjHBbGZ4SCLWrtU=);background-repeat: no-repeat; background-size: cover; height: 1200px; width: 1600px; margin-top: 100px; margin-left: 150px; border-radius: 70px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 100px; gap: 30px;">
+
+        <a href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=613febda-7f51-4625-9c76-4bbb2c8f83a4"
+            style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;">
+            <h1 style="font-size: 50px;">Happning Now!</h1>
+        </a>
+
+        <a href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=613febda-7f51-4625-9c76-4bbb2c8f83a4"
+            style="color: rgb(252, 219, 108); font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;">
+            <h1 style="font-size: 200px;">Weekend Sale</h1>
+        </a>
+
+        <a href="https://www.wix.com/website-template/view/html/3173?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=613febda-7f51-4625-9c76-4bbb2c8f83a4"
+            style="color: rgb(252, 219, 108); font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;">
+            <button type="btn" class="btn btn-light badge-pill" style="height: 50px; width: 150px;">Shop Now</button>
+        </a>
+
+    </div>
+
+    <div
+        style="background-color:  rgb(248, 238, 204); height: 1450px; width: 100%; display: flex; flex-direction: column; align-items: center; margin-top: 5%; padding-top: 50PX; color: #243602;">
+
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Follow Us</h1>
+        <a href="https://www.instagram.com/wix"
+            style="font-family: 'Times New Roman', Times, serif; font-size: 100px; color: #243602; text-decoration: none;">@Re.vert</a>
+
+        <div style="display: flex; gap: 20px; margin-top: 2%;">
+
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmo4opnVXCmWm1RY4_tTqwJIIxIT7lz6Bndr-oWMJDtAfZ11Ga"
+                style="height: 300px; width: 300px; border-radius: 20px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ3CUg47FQNkCx1ycUQYZF70zVA9Hi2VpPiLI30zHhTN0liCWz"
+                style="height: 300px; width: 300px; border-radius: 20px;">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5kJbFZ-FPSFdBIGGB_Ez7GstobGdkTwIqAYjV68xXpkZK0yzY"
+                style="height: 300px; width: 300px; border-radius: 20px;">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYt_CECDx1Ke_lmD1xHwmGtgeZhResDUJ9mYhVAgov7LIuPOEm"
+                style="height: 300px; width: 300px; border-radius: 20px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-z1rzCSYtO-ubI9jKoNU8vHClDWWqZQ4NFyyi5VuzVxLDLf79"
+                style="height: 300px; width: 300px; border-radius: 20px;">
+
+        </div>
+
+        <div style="border-top: 1px #243602 solid; margin-top: 5%; width: 100%; padding-bottom: 5%;">
+
+            <div style="display: flex; gap: 20%;">
+
+                <div style="margin-left: 5%; margin-top: 3%;">
+
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 400%; margin-top: 5%;">
+                        Stay inspired and<br> eco-conscious</h1>
+                    <p style="margin-top: 5%;">Receive the latest trends and tips on eco-friendly design,<br>
+                        sustainable living, zero waste and
+                        eco-conscious practices.</p>
+
+                    <div style="display: flex; gap: 20px; margin-top: 10%;">
+                        <label for="E-mail">E-mail*</label><br>
+                        <input type="text" id="E-mail" name="E-mail" value="" required
+                            style="background-color: transparent; border: 1px #243602 solid; border-width: 0 0 1px 0; width: 400px; margin-left: -14%;">
+                        <button type="button" class="btn badge-pill"
+                            style="border: 1px #243602 solid; background-color: transparent; height: 50px; width: 150px; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 150%;">Submit</button>
+                    </div>
+
+                </div>
+
+                <div style="display: flex; gap: 50px; margin-top: 15%;">
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+
+                        <a href="https://www.wix.com/demone2/re-vert"
+                            style="color: #243602; text-decoration: none;">Home</a>
+                        <a href="https://www.wix.com/demone2/re-vert/shop-all"
+                            style="color: #243602; text-decoration: none;">Shop All</a>
+                        <a href="https://www.wix.com/demone2/re-vert/our-mission"
+                            style="color: #243602; text-decoration: none;">Our Mission</a>
+                        <a href="https://www.wix.com/demone2/re-vert/contact"
+                            style="color: #243602; text-decoration: none;">Contact</a>
+                        <a href="https://www.wix.com/demone2/re-vert/faq"
+                            style="color: #243602; text-decoration: none;">FAQ</a>
+
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+
+                        <a href="https://www.wix.com/demone2/re-vert/kitchen"
+                            style="color: #243602; text-decoration: none;">Kitchen</a>
+                        <a href="https://www.wix.com/demone2/re-vert/bath"
+                            style="color: #243602; text-decoration: none;">Bath</a>
+                        <a href="https://www.wix.com/demone2/re-vert/on-the-go"
+                            style="color: #243602; text-decoration: none;">On the Go</a>
+                        <a href="https://www.wix.com/demone2/re-vert/sale"
+                            style="color: #243602; text-decoration: none;">Sale</a>
+
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+
+                        <a href="https://www.wix.com/demone2/re-vert/terms-and-conditions"
+                            style="color: #243602; text-decoration: none;">Terms & Conditions</a>
+                        <a href="https://www.wix.com/demone2/re-vert/privacy-policy"
+                            style="color: #243602; text-decoration: none;">Privacy Policy</a>
+                        <a href="https://www.wix.com/demone2/re-vert/shipping-policy"
+                            style="color: #243602; text-decoration: none;">Shipping Policy</a>
+                        <a href="https://www.wix.com/demone2/re-vert/refund-policy"
+                            style="color: #243602; text-decoration: none;">Refund Policy</a>
+                        <a href="https://www.wix.com/demone2/re-vert/cookie-policy"
+                            style="color: #243602; text-decoration: none;">Cookie Policy</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div
+            style="display: flex; justify-content: space-between; gap: 20%;  margin-top: 3%; border-top: 1px #243602 solid; width: 100%;">
+
+            <p style="margin-top: 2%; margin-left: 5%;">© 2035 by Re.Vert. Powered and secured by <a
+                    href="http://wix.com/?utm_campaign=vir_created_with" style="color: #243602;"><u>Wix</u></a>
+            </p>
+
+            <div style="display: flex; gap: 50px; margin-top: 2%; margin-right: 20%;">
+
+                <a href="https://www.facebook.com/wix" style="color: #243602;"><u>Facebook</u></a>
+                <a href="https://www.instagram.com/wix" style="color: #243602;"><u>Instagram</u></a>
+                <a href="https://www.twitter.com/wix" style="color: #243602;"><u>Twitter</u></a>
+                <a href="https://www.pinterest.com/wixcom/" style="color: #243602;"><u>Pinterest</u></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
